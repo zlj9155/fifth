@@ -1,13 +1,85 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
+
+
 
   
-  <title>花儿的博客</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="自信，从容，待人真诚。">
+
+
+<html class="theme-next pisces use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.ico?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="自信，从容，待人真诚。">
 <meta property="og:type" content="website">
 <meta property="og:title" content="花儿的博客">
 <meta property="og:url" content="http://yoursite.com/index.html">
@@ -16,759 +88,2126 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="xyz">
 <meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="花儿的博客" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  
-<link rel="stylesheet" href="/css/style.css">
 
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/"/>
+
+
+
+
+
+  <title>花儿的博客</title>
+  
+
+
+
+
+
+
+
+
+  <!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/love.js"></script>
 <meta name="generator" content="Hexo 4.2.0"></head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">花儿的博客</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">不知所云</a>
-        </h2>
-      
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+<a href="https://github.com/keep-in-silence" target="_blank" rel="noopener" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#fff; color:#151513; position: absolute; top: 0; border: 0; left: 0; transform: scale(-1, 1);" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">花儿的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
+      
+        <p class="site-subtitle">不知所云</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
         
-          <a class="main-nav-link" href="/">Home</a>
+        <li class="menu-item menu-item-home">
+          <a href="/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
         
-          <a class="main-nav-link" href="/archives">Archives</a>
+        <li class="menu-item menu-item-about">
+          <a href="/about/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
         
-      </nav>
-      <nav id="sub-nav">
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
         
-        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/03/16/hello-world/" class="article-date">
-  <time datetime="2020-03-15T16:12:09.751Z" itemprop="datePublished">2020-03-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/16/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
+        <li class="menu-item menu-item-留言板">
+          <a href="/guestbook%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-newspaper-o"></i> <br />
+            
+            留言板
+          </a>
+        </li>
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 
       
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/03/16/hello-world/" data-id="ck7t8trej0005k6s60ip1ewnx" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-决策树" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/03/09/%E5%86%B3%E7%AD%96%E6%A0%91/" class="article-date">
-  <time datetime="2019-03-09T05:29:41.000Z" itemprop="datePublished">2019-03-09</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/09/%E5%86%B3%E7%AD%96%E6%A0%91/">决策树</a>
-    </h1>
+    </ul>
   
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>决策树是一种预测模型，代表的是一种对象特征属性与对象目标值之间的一种映射关系。<font color=#D2691E>决策树仅有单一输出，如果有多个输出，可以分别建立独立的决策树以处理不同的输出。</font></p>
-<p><font color=#6495ED>决策树可以转换成一个if-then规则的集合，也可看作是定义在特征空间划分上的类的条件概率分布。</font></p>
-<p>决策树学习的三个步骤：特征选择（熵-信息增益、信息增益率、基尼指数）、决策树的生成（考虑的时局部最优）、决策树的修剪（考虑的时全局最优）。<br>发生过拟合时，需要对决策树进<font color=#D2691E>行自下而上的剪枝</font>。往往时通过极小化决策树整体的损失函数或代价函数来实现的。</p>
-<p>决策树分为分类树和回归树两种，<font color=#D2691E><b>分类树</b>对<b>离散</b>变量做决策，输出是样本的预测类别；<b>回归树</b>对<b>连续</b>变量做决策，输出是一个实数 。</font>本文介绍ID3、C4.5和CART这三种构造决策树的算法。</p>
-<p><b>ID3算法（多叉树）</b></p>
-<p>奥卡姆剃刀：给定两个具有相同泛化误差的模型，较简单的模型比较复杂的模型更可取。</p>
-<p>建立在“奥卡姆剃刀”的基础上，即<font color=#D2691E>越是小型的决策树越优于大的决策树</font>。ID3算法中根据特征选择和信息增益评估，每次<font color=#D2691E>选择信息增益最大的特征作为分支标准。</font>为了去除过度数据匹配的问题，可通过裁剪合并相邻的无法产生大量信息增益的叶子节点（例如设置信息增益阀值）。</p>
-<p>使用<font color=#D2691E>信息增益有一个缺点</font>，那就是它偏向于具有大量值的属性（对可取值较多的属性有所偏好）–就是说在训练集中，某个属性所取的不同值的个数越多，那么越有可能拿它来作为分裂属性，而这样做有时候是没有意义的。</p>
-<p>此外，ID3不能处理连续分布的数据特征。</p>
-<p>① 信息熵<br>熵是对不确定性的度量。信息熵可以被认为是系统有序化程度的一个度量：将其定义为离散随机事件出现的概率，一个系统越是有序，信息熵就越低，反之<font color=#D2691E>一个系统越是混乱，它的信息熵就越高。</font></p>
-<p><img src="1.png" alt="1"></p>
-<p>② 信息增益（不限定分了几个枝）<br>在决策树的分类问题中，信息增益(information gain)是针对一个特定的分支标准，<font color=#D2691E>计算原有数据的信息熵与引入该分支标准后的信息熵之差。</font>信息增益的定义如下：<br><img src="2.png" alt="2"></p>
-<p>接下来以天气的例子来说明ID3算法。下图是样本数据集，每个样本包括4个特征“Outlook”，“Temperature”,”Humidity”和“Windy”，模型的分类目标是play或者not play。<br><img src="3.png" alt="3"></p>
-<p>表中一共包含14个样本，包括9个正样本和5个负样本，并且是一个二分类问题，那么当前信息熵的计算如下：<br><img src="4.png" alt="4"><br>接下来以表中的Outlook属性作为分支标准，根据sunny、overcast、rain这三个属性值可将数据分为三类，如下图所示：<br><img src="5.png" alt="5"></p>
-<p>引入该分支标准后，数据被分成了3个分支，每个分支的信息熵计算如下：<br><img src="6.png" alt="6"></p>
-<p>③ 算法思想<br>ID3算法的基本思想是：首先计算出原始数据集的信息熵，然后依次将数据中的每一个特征作为分支标准，并计算其相对于原始数据的信息增益，选择最大信息增益的分支标准来划分数据，因为信息增益越大，区分样本的能力就越强，越具有代表性。重复上述过程从而生成一棵决策树，很显然这是一种<font color=#D2691E>自顶向下</font>的贪心策略。</p>
-<p> <b>C4.5算法（多叉树）</b><br>C4.5算法是对ID3算法的改进，C4.5克服了ID3的2个缺点：<br><font color=#9400D3>1）用信息增益选择属性时偏向于选择分枝比较多的属性值，即取值多的属性<br>2）不能处理连续属性</font><br>对于离散特征，C4.5算法<font color=#D2691E>不直接使用信息增益，而是使用“增益率”（gain ratio）</font>来选择最优的分支标准，增益率的定义如下：<br><img src="7.png" alt="7"><br>作为分支标准的属性可取值越多，则IV 的值越大。<br>需要注意的是：<font color=#D2691E> 增益率准则对可取值数目较少的属性有所偏好，</font><br>因此C4.5算法并不是直接选择增益率最大的属性作为分支标准，而是<font color=#D2691E>先从候选属性中找出信息增益高于平均水平的属性，再从中选择增益率最高的。</font></p>
-<p>C4.5算法<font color=#D2691E>处理连续属性的方法是先把连续属性转换为离散属性再进行处理。</font>虽然本质上属性的取值是连续的，但对于有限的采样数据它是离散的，如果有N条样本，那么我们有N-1种离散化的方法：&lt;=vj的分到左子树，&gt;vj的分到右子树。计算这N-1种情况下最大的信息增益率。在离散属性上只需要计算1次信息增益率，而在连续属性上却需要计算N-1次，计算量是相当大的。通过以下办法可以减少计算量：对于连续属性先按大小进行排序，只有在分类发生改变的地方才需要切开。比如对Temperature进行排序：<br><img src="8.png" alt="8"></p>
-<p>本来有13种离散化的情况，现在只需计算7种。如果利用增益率来选择连续值属性的分界点，会导致一些副作用。分界点将样本分成两个部分，这两个部分的样本个数之比也会影响增益率。根据增益率公式，我们可以发现，当分界点能够把样本分成数量相等的两个子集时（我们称此时的分界点为等分分界点），增益率的抑制会被最大化，因此等分分界点被过分抑制了。子集样本个数能够影响分界点，显然不合理。<font color=#D2691E>因此在决定分界点时还是采用增益这个指标，而选择属性的时候才使用增益率这个指标。</font></p>
-<p><b>CART算法（二叉树）</b><br>CART（Classification And Regression Tree）算法既可以用于创建分类树，也可以用于创建回归树。CART算法的重要特点包含以下三个方面：<br>1）<font color=#8B008B> 二分</font>(Binary Split)：在每次判断过程中，都是对样本数据进行二分。由于CART算法构成的是一个二叉树，它在每一步的决策时只能是“是”或者“否”，即使一个feature有多个取值，也是把数据分为两部分<br>2） <font color=#8B008B>单变量分割</font>(Split Based on One Variable)：每次最优划分都是针对单个变量。<br>3） <font color=#8B008B>剪枝策略</font>：CART算法的关键点，剪枝过程的重要性要比树生成过程更为重要，对于不同的划分标准生成的最大树(Maximum Tree)，在剪枝之后都能够保留最重要的属性划分，差别不大。反而是剪枝方法对于最优树的生成更为关键。</p>
-<p><font color=#008000>CART决策树的生成是递归的构建二叉决策树的过程。<b>对回归树用平方误差最小化准则；对分类树用基尼指数最小化准则</b>，进行特征选择，生成二叉树。</font><br>① CART分类决策树<br>GINI指数<br>CART的分类树<font color=#D2691E>用GINI指数选择最优特征，同时决定该特征的最优二值切分点</font>。GINI指数主要是度量数据划分的不纯度，是介于0~1之间的数。<font color=#D2691E>GINI值越小，表明样本集合的纯净度越高；</font>GINI值越大表明样本集合的类别越杂乱（这一点与熵相似）。直观来说，GINI指数反映了从数据集中随机抽出两个样本，其类别不一致的概率。<font color=#D2691E>不考虑剪枝情况下，分类决策树递归创建过程中就是每次选择GiniGain最小的节点做分叉点，直至子数据集都属于同一类或者所有特征用光</font>了。计算过程如下：<br><img src="9.png" alt="9"></p>
-<p><font color=#D2691E>特征双化</font><br>如果特征的值是离散的，并且是具有两个以上的取值，则CART算法会考虑将目标类别合并成两个超类别（双化）。因为CART树是二叉树，所以对于有N(N≥3)个取值的离散特征，在处理时也只能有两个分支，这就要通过组合创建二取值序列并取GiniGain最小者作为树分叉决策点。例如，某特征值具有[‘young’,’middle’,’old’]三个取值,那么二分序列会有如下3种可能性：[((‘young’,), (‘middle’, ‘old’)), ((‘middle’,), (‘young’, ‘old’)), ((‘old’,), (‘young’, ‘middle’))]。</p>
-<p><font color=#D2691E>对连续特征的处理</font><br>如果特征的取值范围是连续的，则CART算法需要把连续属性转换为离散属性再进行处理。如果有N条样本，那么我们有N-1种离散化的方法：&lt;=vj的分到左子树，&gt;vj的分到右子树。取这N-1种情况下GiniGain最小的离散化方式。</p>
-<p>下面举一个简单的例子来说明上述过程：<br><img src="10.png" alt="10"></p>
-<p>在上述图中，每个样本有3个特征，分别是有房情况，婚姻状况和年收入，其中有房情况和婚姻状况是离散的取值，而年收入是连续的取值。拖欠贷款者属于分类的结果。现在来看有房情况这个特征，那么按照它划分后的Gini指数计算如下： </p>
-<p><img src="11.png" alt="11"><br>而对于婚姻状况特征来说，它的取值有3种，按照每种属性值分裂后Gini指标计算如下：<br><img src="12.png" alt="12"><br>GINI越小，表示样本的分类越纯，所以我们要选择的是将单身和离异放在一起。</p>
-<p>最后还有一个取值连续的特征，年收入，它的取值是连续的，那么连续的取值采用分裂点进行分裂。如下：<br><img src="13.png" alt="13"></p>
-<p>根据这样的分裂规则CART算法就能完成建树过程。<br>算法停止的条件是节点中的样本个数小于预定阈值，或样本集的基尼指数小于预定阈值（样本基本属于同一类），或者没有更多特征了。<br>② CART回归决策树<br>一个回归树对应着输入空间（即特征空间）的一个划分以及在划分的单元上的输出值。假设已经将输入空间划分为M个单元R1,R2,….,RM,并且在每个单元RM上优异个固定的输出值CM</p>
-<p><img src="14.png" alt="14"></p>
-<p><font color=#D2691E>CART的剪枝</font>（递归的从树的叶节点向上回缩）<br>分析CART的递归建树过程，不难发现它实质上存在着一个数据过度拟合问题。<br>决策树常用的剪枝常用的简直方法有两种：<font color=#1E90FF>预剪枝(Pre-Pruning)和后剪枝(Post-Pruning)。</font><br>预剪枝是根据一些原则及早的停止树增长，如树的深度达到用户所要的深度、节点中样本个数少于用户指定个数、不纯度指标下降的最大幅度小于用户指定的幅度等；<br>后剪枝则是通过在完全生长的树上剪去分枝实现的，通过删除节点的分支来剪去树节点，可以使用的后剪枝方法有多种，比如：代价复杂性剪枝、最小误差剪枝、悲观误差剪枝等等。</p>
-<p>一个简单实例<br>为了便于理解，下面举一个简单实例。训练数据见下表，目标是得到一棵最小二乘回归树。<br><img src="15.png" alt="15"></p>
-<ol>
-<li>选择最优切分变量j与最优切分点s</li>
-</ol>
-<p>在本数据集中，只有一个变量，因此最优切分变量自然是x。</p>
-<p>接下来我们考虑9个切分点[1.5,2.5,3.5,4.5,5.5,6.5,7.5,8.5,9.5] </p>
-<p><img src="16.png" alt="16"></p>
-<p><img src="17.png" alt="17"><br>例如，取 s=1.5。此时 R1={1}, R2={2,3,4,5,6,7,8,9,10}， 这两个区域的输出值分别为：<br>c1=5.56,  c2=19(5.7+5.91+6.4+6.8+7.05+8.9+8.7+9+9.05)=7.50  得到下表：<br><img src="18.png" alt="18"></p>
-<p>把c1,c2的值代入到上式，如：m(1.5)=0+15.72=15.72 。同理，可获得下表：<br><img src="19.png" alt="19"><br>显然取 s=6.5时，m(s)最小。因此，第一个划分变量j=x,s=6.5</p>
-<p>综上：<br><img src="20.png" alt="20"><br><img src="21.png" alt="21"><br><img src="22.png" alt="22"></p>
-<p><font color=#1E90FF>回归树和线性回归的对比：</font></p>
-<p><img src="23.png" alt="23"><br><font color=#D2691E>总结：</font><br>实际上，回归树总体流程类似于分类树，分枝时穷举每一个特征的每一个阈值，来寻找最优切分特征j和最优切分点s，衡量的方法是平方误差最小化。分枝直到达到预设的终止条件(如叶子个数上限)就停止。</p>
-<p>当然，处理具体问题时，单一的回归树肯定是不够用的。可以利用集成学习中的boosting框架，对回归树进行改良升级，得到的新模型就是提升树（Boosting Decision Tree），在进一步，可以得到梯度提升树（Gradient Boosting Decision Tree，GBDT），再进一步可以升级到XGBoost。</p>
-<p>————————————————————————————————————————————<br>友情分割线<br>————————————————————————————————————————————</p>
-<p>当前，最火的两类算法莫过于<b>神经网络算法</b>（CNN、RNN、LSTM等）与<b>树形算法（随机森林、GBDT、XGBoost等）</b>，树形算法的基础就是<b>决策树</b>。<br>下面介绍，回归树+boosting框架，BDT,GBDT,XGB</p>
-<p>回归与分类不同，就在于其目标变量是连续数值型。</p>
-<p>RF、GBDT和XGBoost都属于集成学习（Ensemble Learning），集成学习的目的是通过结合多个基学习器的预测结果来改善单个学习器的泛化能力和鲁棒性。<br>先去复习一下继承学习——boosting  &amp;&amp;  bagging</p>
-<p>根据个体学习器的生成方式，目前的集成学习方法大致分为两大类：即个体学习器之间存在强依赖关系、必须串行生成的序列化方法，以及个体学习器间不存在强依赖关系、可同时生成的并行化方法；前者的代表就是Boosting，后者的代表是Bagging和“随机森林”（Random Forest）。</p>
-<p><b>1、RF<br>RF(特征）:自助抽样，特征采样，无剪枝，投票，减小方差（bagging）</b><br>1.1 原理<br>　　提到随机森林，就不得不提Bagging，Bagging可以简单的理解为：<font color=#D2691E>放回抽样，多数表决（分类）或简单平均（回归）,同时Bagging的基学习器之间属于并列生成，不存在强依赖关系。 </font><br>　　Random Forest（随机森林）是Bagging的扩展变体，它在以决策树 为基学习器构建Bagging集成的基础上，进一步在决策树的训练过程中引入了随机特征选择，因此可以概括RF包括四个部分：<b>1、随机选择样本（放回抽样）；<font color=#D2691E>2、随机选择特征；</font>3、构建决策树；4、随机森林投票（平均）。 </b></p>
-<p>在构建决策树的时候，RF的每棵决策树都最大可能的进行生长而不进行剪枝；在对预测输出进行结合时，RF通常对分类问题使用简单投票法，回归任务使用简单平均法 </p>
-<p>RF的重要特性是不用对其进行交叉验证或者使用一个独立的测试集获得无偏估计，它可以在内部进行评估，也就是说<b>在生成的过程中可以对误差进行无偏估计</b>，由于每个基学习器只使用了训练集中约63.2%的样本，剩下约36.8%的样本可用做验证集来对其泛化性能进行“包外估计”。</p>
-<p>　　<font color=#D2691E>RF和Bagging对比：RF相比于普通的bagging，不仅泛化误差地，而且训练效率高（用时少)。</font>RF的起始性能较差，特别当只有一个基学习器时，随着学习器数目增多，随机森林通常会收敛到更低的泛化误差。随机森林的训练效率也会高于Bagging，因为在单个决策树的构建中，Bagging使用的是‘确定性’决策树，在选择特征划分结点时，要对所有的特征进行考虑，而随机森林使用的是‘随机性’特征数，只需考虑特征的子集。<br>方差减小，而且方差的减小补偿了偏差的增大，因此总体而言是更好的模型。</p>
-<p>1.2<b> 优缺点</b><br>　　随机森林的优点较多，简单总结：<br>                 1）在数据集上表现良好，训练速度快、预测准确度较高；<br>                 2）能够处理很高维的数据，并且不用特征选择，而且在训练完后，给出特征的重要性；<br>                 3）容易做成并行化方法。<br>　　RF的缺点：1）在噪声较大的分类或者回归问题上会过拟合。2）只用了特征学习，没有用到数值优化，因此，GBDT出现。</p>
-<p>2、<b>GBDT（使用了决策树的gradient boosting）（又称Gradient Boosted Decision Tree/Grdient Boosted Regression Tree）</b><br>　　提GBDT之前，谈一下Boosting，Boosting是一种与Bagging很类似的技术。不论是Boosting还是Bagging，所使用的多个分类器类型都是一致的。但是在前者当中，不同的分类器是通过串行训练而获得的，每个新分类器都根据已训练的分类器的性能来进行训练。<font color=#D2691E>Boosting是通过关注被已有分类器错分的那些数据来获得新的分类器。</font><br>　　由于Boosting分类的结果是基于所有分类器的加权求和结果的，因此Boosting与Bagging不太一样，Bagging中的分类器权值是一样的，而Boosting中的分类器权重并不相等，每个权重代表对应的分类器在上一轮迭代中的成功度。</p>
-<p>GBDT(特征）:串行，回归树，容易过拟合，减小偏差（boosting），等概率提升错误样本，异常值敏感</p>
-<p>2.1 原理<br>        gboost原理就是所有弱分类器相加等于预测值，下一个弱分类器去拟合误差函数对预测值的梯度。这个梯度在gbdt中就是预测值和真实值差。<br><b>不同于随机森林所有树的预测求均值，gbdt所有的树的预测值加起来是最终的预测值，可以不断接近真实值。</b><br>举个例子：<br>假如有个人30岁，<br>第一棵树，我们首先用20岁去拟合，发现损失有10岁，<br>第二颗，这时我们用6岁去拟合剩下的损失，发现差距还有4岁，<br>第三颗，我们用3岁拟合剩下的差距，差距就只有一岁了。<br>三棵树加起来为29岁，距离30最近。<br>目标函数：</p>
-<p>第m颗树的目标函数就是m颗相加。<br>下一颗树都是用之前的残差去拟合</p>
-<pre><code>传统boosting的原理参见：关于bagging和boosting的知识.note</code></pre><p>　　GBDT与传统的Boosting区别较大，它的每一次计算都是为了减少上一次的残差，而为了消除残差，我们可以在残差减小的梯度方向上建立模型,所以说，在GradientBoost中，每个新的模型的建立是为了使得之前的模型的残差往梯度下降的方法，与传统的Boosting中关注正确错误的样本加权有着很大的区别。<br>　　在GradientBoosting算法中，关键就是利用损失函数的负梯度方向在当前模型的值作为残差的近似值，进而拟合一棵CART回归树。<br>　　GBDT会加所有树的结果，而这种累加是无法通过分类完成的，因此GBDT的树都是CART回归树，而不是分类树（尽管GBDT调整后也可以用于分类但不代表GBDT的树为分类树）。</p>
-<p>GBDT算法包括三个部分：</p>
-<ol>
-<li>损失函数: 从GDBT算法中可以看出，GDBT算法要求损失函数必须是一阶可导的，而且GDBT框架下，任何一阶可导的损失函数都可以使用，不必再为其推导一个新的boosting算法。</li>
-<li>弱分类器: GDBT框架下使用的是决策树作为基函数，每一次迭代过程中，当前函数的构建是在前一次学习结果的基础上使用贪心算法，即：基于当前情况(Gini系数或者纯度)，选择最佳分裂点. 在学习弱分类器的过程中，可以对弱分类器加入约束，如:决策树可以约束深度和叶子的数量。</li>
-<li>Addictive Model: 在GDBT框架下，梯度下降的过程是每一步迭代学习新的树来最小化损失函数(A gradient descent procedure is used to minimize the loss when adding trees.)</li>
-</ol>
-<p>一些特性<br>       1. 每次迭代获得的决策树模型都要乘以一个缩减系数，从而降低每棵树的作用，提升可学习空间。<br>       2. 每次迭代拟合的是一阶梯度。<br>2.2 优缺点<br>　　GBDT的性能在RF的基础上又有一步提升，因此其优点也很明显，1、它能灵活的处理各种类型的数据，包括连续值和离散值；2、在相对较少的调参时间下，预测的准确度较高。（这个是相对SVM说的） 3. GBDT加入了简单的数值优化思想。<br>　　缺点：当然由于它是Boosting，因此基学习器之前存在串行关系，难以并行训练数据。</p>
-<p>3、XGBoost<br>3.1 原理<br>        Xgboost更加有效应用了数值优化。且能够自动地运用CPU的多线程进行并行计算，同时在算法精度上也进行了精度的提高。<br>　　目标函数依然是所有树相加等于预测值。（和gbdt一样）<br> XGBoost 是GBDT的一个变种，最大的区别是xgboost通过对目标函数做二阶泰勒展开<br>损失函数如下，引入了一阶导数，二阶导数，使算法更快收敛。<br>　　<img src="24.png" alt="24"></p>
-<p>XGboost模型是基于GDBT模型的改进提高版</p>
-<p>为什么会效果优呢？原因在于变换：<br>单纯从算法角度，<br>一，加入正则项，防止过拟合。（叶子节点，树的深度等）<br>二，xgboost引入二阶导，下次拟合的不为y-fx，充分利用信息。<br>导数等于0.，可以得到</p>
-<p>下棵树去拟合，相当于除以二阶导，差别大的时候还要放大点需要拟合的值。为误差大的加大权重<br><img src="25.png" alt="25"></p>
-<p>Xgboost迭代与gbdt一样根据误差建立下一个弱分类器，都是gboost的迭代方法，即下一棵树拟合损失函数根据预测值求导的梯度。</p>
-<p>小结：决策树的前世今生不过是从只是应用特征学习，最终也加入了数值优化的部分。由于纯粹的分类算法，xgboost即包含有效的特征学习，又包含有效的数值优化，因此成为了结构化数据大杀器。<br>4、区别<br>4.1 GBDT和XGBoost区别   （不明觉厉）<br>1）传统的GBDT以CART树作为基学习器，XGBoost还支持线性分类器，这个时候XGBoost相当于L1和L2正则化的逻辑斯蒂回归（分类）或者线性回归（回归）；</p>
-<p>2）传统的GBDT在优化的时候只用到一阶导数信息，XGBoost则对损失函数进行了二阶泰勒展开，得到一阶和二阶导数；</p>
-<p>3）XGBoost在代价函数中加入了正则项，用于控制模型的复杂度。正则项里包含了树的叶子节点个数、每个叶子节点上输出的score的L2模的平方和。从Bias-variance tradeoff角度来讲，正则项降低了模型的variance，使学习出来的模型更加简单，防止过拟合，这也是xgboost优于传统GBDT的一个特性。<br><img src="26.png" alt="26"></p>
-<p>4）XGB的权重衰减。相当于学习速率，XGBoost在进行完一次迭代时，会将叶子节点的权值乘上该系数，主要是为了削弱每棵树的影响，让后面有更大的学习空间。（GBDT也有学习速率）；</p>
-<p>5）XGB支持列抽样。XGBoost借鉴了随机森林的做法，支持列抽样，不仅防止过拟合，还能减少计算；</p>
-<p>6）对缺失值的处理。对于特征的值有缺失的样本，XGBoost还可以自动学习出它的分裂方向；对于在训练过程中遇到的缺失值，xgboost将其分别归到左子树和右子树分别计算损失，选取较优的哪一个。如果在训练中没有缺失值，在预测时遇到缺失值，就默认分到右子树。</p>
-<p>7）XGBoost工具支持并行。Boosting不是一种串行的结构吗?怎么并行的？注意XGBoost的并行不是tree粒度的并行，XGBoost也是一次迭代完才能进行下一次迭代的（第t次迭代的代价函数里包含了前面t-1次迭代的预测值）。XGBoost的并行是在特征粒度上的。我们知道，决策树的学习最耗时的一个步骤就是对特征的值进行排序（因为要确定最佳分割点），XGBoost在训练之前，预先对数据进行了排序，然后保存为block结构，后面的迭代 中重复地使用这个结构，大大减小计算量。这个block结构也使得并行成为了可能，在进行节点的分裂时，需要计算每个特征的增益，最终选增益最大的那个特征去做分裂，那么各个特征的增益计算就可以开多线程进行。</p>
-<p>4.2 GBDT和随机森林区别   （一个boosting，一个bagging）<br>1、组成随机森林的树可以是分类树，也可以是回归树；而GBDT只由回归树组成<br>2、组成随机森林的树可以并行生成；而GBDT只能是串行生成<br>3、对于最终的输出结果而言，随机森林采用多数投票等；而GBDT则是将所有结果累加起来，或者加权累加起来<br>4、随机森林对异常值不敏感，GBDT对异常值非常敏感<br>5、随机森林对训练集一视同仁，GBDT是基于权值的弱分类器的集成<br>6、随机森林是通过减少模型方差提高性能，GBDT是通过减少模型偏差提高性能</p>
-<p>关系图：<br><img src="27.png" alt="27"></p>
-<p>—————————————————————————————————————————————————————————————————————————————————————————————友情分割线——————————————————————————————-</p>
-<p>lightGBM与XGBoost区别</p>
-<p>参考文献;</p>
-<ol>
-<li><a href="https://blog.csdn.net/u010089444/article/details/53241218" target="_blank" rel="noopener">https://blog.csdn.net/u010089444/article/details/53241218</a></li>
-<li><a href="https://blog.csdn.net/weixin_40604987/article/details/79296427" target="_blank" rel="noopener">https://blog.csdn.net/weixin_40604987/article/details/79296427</a></li>
-<li><a href="https://cloud.tencent.com/developer/article/1061955" target="_blank" rel="noopener">https://cloud.tencent.com/developer/article/1061955</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/28675445" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/28675445</a><br><a href="https://blog.csdn.net/jackmcgradylee/article/details/77778001" target="_blank" rel="noopener">https://blog.csdn.net/jackmcgradylee/article/details/77778001</a></li>
-<li><a href="https://blog.csdn.net/u012155582/article/details/79866245" target="_blank" rel="noopener">https://blog.csdn.net/u012155582/article/details/79866245</a></li>
-<li><a href="https://marian5211.github.io/2018/03/12/%E3%80%90%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E3%80%91gbdt-xgboost-lightGBM%E6%AF%94%E8%BE%83/" target="_blank" rel="noopener">https://marian5211.github.io/2018/03/12/%E3%80%90%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E3%80%91gbdt-xgboost-lightGBM%E6%AF%94%E8%BE%83/</a></li>
-<li><a href="http://gwansiu.com/2017/10/29/RF-GBDT-XGboost/" target="_blank" rel="noopener">http://gwansiu.com/2017/10/29/RF-GBDT-XGboost/</a></li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/03/09/%E5%86%B3%E7%AD%96%E6%A0%91/" data-id="ck7t8trex0015k6s6378v5pgv" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-leetcode-208" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/01/23/leetcode-208/" class="article-date">
-  <time datetime="2019-01-23T09:50:11.000Z" itemprop="datePublished">2019-01-23</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/01/23/leetcode-208/">leetcode-208</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>题意描述：<br><img src="1.png" alt="1"></p>
-<p>这道题啊，让我再感受一遍构造函数是啥子，有什么意义。<br>new是用来干嘛的，用来创建一对象，并赋值给指针的。new后面一定跟着是类名（即构造函数）。</p>
-<p>code:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line">class TrieNode&#123;</span><br><span class="line">    public:</span><br><span class="line">    bool end;</span><br><span class="line">    TrieNode * child[26];</span><br><span class="line">    TrieNode():end(false)&#123;&#x2F;&#x2F;构造函数没有返回值，构造的是TireNode 这样的一个对象，里面的所有成员都要有所交代，有所初始化                    </span><br><span class="line">        for(auto &amp;c:child)  &#x2F;&#x2F;&amp;  ?(等待大神解答)    &#x2F;&#x2F;这是构造函数存在的意义。</span><br><span class="line">            c&#x3D;NULL;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">class Trie &#123;</span><br><span class="line">private:</span><br><span class="line">    TrieNode * root;</span><br><span class="line">public:</span><br><span class="line">    &#x2F;** Initialize your data structure here. *&#x2F;</span><br><span class="line">    Trie() &#123;</span><br><span class="line">        root&#x3D;new TrieNode();            &#x2F;&#x2F;为什么这样写？想想构造函数存在的意义是什么。</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    &#x2F;** Inserts a word into the trie. *&#x2F;</span><br><span class="line">    void insert(string word) &#123;</span><br><span class="line">        TrieNode *p &#x3D;root;</span><br><span class="line">        for(auto k:word)&#123;   &#x2F;&#x2F;或者用char</span><br><span class="line">            if(!p-&gt;child[k-&#39;a&#39;])   p-&gt;child[k-&#39;a&#39;]&#x3D;new TrieNode();  &#x2F;&#x2F;该子节点存在，就已经表明了该节点的身份</span><br><span class="line">            p&#x3D;p-&gt;child[k-&#39;a&#39;];</span><br><span class="line">        &#125;</span><br><span class="line">        p-&gt;end&#x3D;true;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    &#x2F;** Returns if the word is in the trie. *&#x2F;</span><br><span class="line">    bool search(string word) &#123;</span><br><span class="line">        TrieNode *p&#x3D;root;</span><br><span class="line">        for(char k:word)&#123;</span><br><span class="line">            if(!p-&gt;child[k-&#39;a&#39;])  return false;</span><br><span class="line">            p&#x3D;p-&gt;child[k-&#39;a&#39;];</span><br><span class="line">        &#125;</span><br><span class="line">        return p-&gt;end;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    &#x2F;** Returns if there is any word in the trie that starts with the given prefix. *&#x2F;</span><br><span class="line">    bool startsWith(string prefix) &#123;</span><br><span class="line">        TrieNode * p&#x3D;root;</span><br><span class="line">        for(char k : prefix)&#123;</span><br><span class="line">            if(!p-&gt;child[k-&#39;a&#39;])   return false;</span><br><span class="line">            p&#x3D;p-&gt;child[k-&#39;a&#39;];</span><br><span class="line">        &#125;</span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">&#x2F;**</span><br><span class="line"> * Your Trie object will be instantiated and called as such:</span><br><span class="line"> * Trie obj &#x3D; new Trie();</span><br><span class="line"> * obj.insert(word);</span><br><span class="line"> * bool param_2 &#x3D; obj.search(word);</span><br><span class="line"> * bool param_3 &#x3D; obj.startsWith(prefix);</span><br><span class="line"> *&#x2F;</span><br></pre></td></tr></table></figure>
-
-
-<p>数据结构的示意图：<br><img src="2.png" alt="2"></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/01/23/leetcode-208/" data-id="ck7t8trel0009k6s61rsa76cl" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%88%B7%E9%A2%98/" rel="tag">刷题</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-sliding-window" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/01/14/sliding-window/" class="article-date">
-  <time datetime="2019-01-14T10:23:28.000Z" itemprop="datePublished">2019-01-14</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/01/14/sliding-window/">sliding-window</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>题意描述：<br><img src="1.png" alt="1"><br> string minWindow(string s, string t)   时间复杂度为O(N)   burte force肯定是不能用的<br>思路：</p>
-<ol>
-<li>要降低时间复杂度，就是要用空间换时间</li>
-<li>可以不止一个循环，但不要循环套循环<br>Input: S = “ADBANC”, T = “ABC”<br>Output: “BANC”</li>
-</ol>
-<p>一个有趣的现象，我们是先扩展，再收缩，就好像一个窗口一样，先扩大右边界，然后再收缩左边界，上面的例子中我们是右边界无法扩大了后才开始收缩左边界，实际上对于复杂的例子，有可能是扩大右边界，然后缩小一下左边界，然后再扩大右边界等等。这就很像一个不停滑动的窗口了，这就是大名鼎鼎的滑动窗口Sliding Window。<br>code1:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    string minWindow(string s, string t) &#123;</span><br><span class="line">        string res &#x3D; &quot;&quot;;</span><br><span class="line">        unordered_map&lt;char, int&gt; letterCnt;</span><br><span class="line">        int left &#x3D; 0, cnt &#x3D; 0, minLen &#x3D; INT_MAX;</span><br><span class="line">        for (char c : t) ++letterCnt[c];</span><br><span class="line">        for (int i &#x3D; 0; i &lt; s.size(); ++i) &#123;</span><br><span class="line">            if (--letterCnt[s[i]] &gt;&#x3D; 0) ++cnt;</span><br><span class="line">            while (cnt &#x3D;&#x3D; t.size()) &#123;</span><br><span class="line">                if (minLen &gt; i - left + 1) &#123;</span><br><span class="line">                    minLen &#x3D; i - left + 1;</span><br><span class="line">                    res &#x3D; s.substr(left, minLen);</span><br><span class="line">                &#125;</span><br><span class="line">                if (++letterCnt[s[left]] &gt; 0) --cnt;</span><br><span class="line">                ++left;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<p>code2</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    string minWindow(string s, string t) &#123;</span><br><span class="line">        string res &#x3D; &quot;&quot;;</span><br><span class="line">        vector&lt;int&gt; letterCnt(128, 0);</span><br><span class="line">        int left &#x3D; 0, cnt &#x3D; 0, minLen &#x3D; INT_MAX;</span><br><span class="line">        for (char c : t) ++letterCnt[c];</span><br><span class="line">        for (int i &#x3D; 0; i &lt; s.size(); ++i) &#123;</span><br><span class="line">            if (--letterCnt[s[i]] &gt;&#x3D; 0) ++cnt;</span><br><span class="line">            while (cnt &#x3D;&#x3D; t.size()) &#123;</span><br><span class="line">                if (minLen &gt; i - left + 1) &#123;</span><br><span class="line">                    minLen &#x3D; i - left + 1;</span><br><span class="line">                    res &#x3D; s.substr(left, minLen);</span><br><span class="line">                &#125;</span><br><span class="line">                if (++letterCnt[s[left]] &gt; 0) --cnt;</span><br><span class="line">                ++left;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<p>这道题也可以不用HashMap，直接用个int的数组来代替，因为ASCII只有256个字符，所以用个大小为256的int数组即可代替HashMap，但由于一般输入字母串的字符只有128个，所以也可以只用128，其余部分的思路完全相同，虽然只改了一个数据结构，但是运行速度提高了一倍，说明数组还是比HashMap快啊，代码如code2.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/01/14/sliding-window/" data-id="ck7t8trer000nk6s6hq1f9zge" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%88%B7%E9%A2%98/" rel="tag">刷题</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-leetcode46-permutations" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/01/12/leetcode46-permutations/" class="article-date">
-  <time datetime="2019-01-12T10:53:56.000Z" itemprop="datePublished">2019-01-12</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/01/12/leetcode46-permutations/">leetcode46-permutations</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>#熟读唐诗三百首，不会作诗也能吟。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;vector&lt;int&gt;&gt; permute(vector&lt;int&gt;&amp; nums) &#123;</span><br><span class="line">        vector&lt;vector&lt;int&gt;&gt; res;</span><br><span class="line">        if(nums.empty())  return res;</span><br><span class="line">        vector&lt;int&gt; tmp;</span><br><span class="line">        Help(nums,res,0);</span><br><span class="line">        return res;</span><br><span class="line">    &#125;</span><br><span class="line">    void Help(vector&lt;int&gt; &amp;nums,  vector&lt;vector&lt;int&gt;&gt; &amp;res,int begin)&#123;</span><br><span class="line">        if(begin&gt;&#x3D;nums.size())&#123;</span><br><span class="line">            res.push_back(nums);</span><br><span class="line">            return;</span><br><span class="line">        &#125;</span><br><span class="line">        for(int i&#x3D;begin;i&lt;nums.size();i++)&#123; &#x2F;&#x2F;固定了前[0-begin-1]</span><br><span class="line">            swap(nums[begin],nums[i]);</span><br><span class="line">            Help(nums,res,begin+1);</span><br><span class="line">            swap(nums[begin],nums[i]);&#x2F;&#x2F;reset</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/01/12/leetcode46-permutations/" data-id="ck7t8tren000ek6s6eq39711k" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-leetcode34-审视二分搜索" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/01/12/leetcode34-%E5%AE%A1%E8%A7%86%E4%BA%8C%E5%88%86%E6%90%9C%E7%B4%A2/" class="article-date">
-  <time datetime="2019-01-12T06:13:54.000Z" itemprop="datePublished">2019-01-12</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/01/12/leetcode34-%E5%AE%A1%E8%A7%86%E4%BA%8C%E5%88%86%E6%90%9C%E7%B4%A2/">leetcode34-审视二分搜索</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>motivation：能想到O(LOG N) 就是二分搜索————代码写不出来。。。奇了怪</p>
-<p>看了一些资料————十个二分9个错，哈哈</p>
-<h1 id="问题一"><a href="#问题一" class="headerlink" title="问题一"></a>问题一</h1><h2 id="给定一个有序的数组，查找value是否在数组中，不存在返回-1。"><a href="#给定一个有序的数组，查找value是否在数组中，不存在返回-1。" class="headerlink" title="给定一个有序的数组，查找value是否在数组中，不存在返回-1。"></a>给定一个有序的数组，查找value是否在数组中，不存在返回-1。</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">int BinarySearch(int array[], int n, int value)</span><br><span class="line">&#123;</span><br><span class="line">    int left &#x3D; 0;</span><br><span class="line">    int right &#x3D; n - 1;</span><br><span class="line">    &#x2F;&#x2F;如果这里是int right &#x3D; n 的话，那么下面有两处地方需要修改，以保证一一对应：</span><br><span class="line">    &#x2F;&#x2F;1、下面循环的条件则是while(left &lt; right)</span><br><span class="line">    &#x2F;&#x2F;2、循环内当 array[middle] &gt; value 的时候，right &#x3D; mid</span><br><span class="line"></span><br><span class="line">    while (left &lt;&#x3D; right)  &#x2F;&#x2F;循环条件，适时而变</span><br><span class="line">    &#123;</span><br><span class="line">        int middle &#x3D; left + ((right - left) &gt;&gt; 1);  &#x2F;&#x2F;防止溢出，移位也更高效。同时，每次循环都需要更新。 注意：右移运算符的优先级低于加法，所以一定要加括号。</span><br><span class="line">        if (array[middle] &gt; value)</span><br><span class="line">            right &#x3D; middle - 1;  &#x2F;&#x2F;right赋值，适时而变</span><br><span class="line">        else if (array[middle] &lt; value)</span><br><span class="line">            left &#x3D; middle + 1;</span><br><span class="line">        else</span><br><span class="line">            return middle;</span><br><span class="line">        &#x2F;&#x2F;可能会有读者认为刚开始时就要判断相等，但毕竟数组中不相等的情况更多</span><br><span class="line">        &#x2F;&#x2F;如果每次循环都判断一下是否相等，将耗费时间</span><br><span class="line">    &#125;</span><br><span class="line">    return -1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h1 id="问题二"><a href="#问题二" class="headerlink" title="问题二"></a>问题二</h1><h2 id="给定一个有序的数组，查找value第一次出现的下标，不存在返回-1。"><a href="#给定一个有序的数组，查找value第一次出现的下标，不存在返回-1。" class="headerlink" title="给定一个有序的数组，查找value第一次出现的下标，不存在返回-1。"></a>给定一个有序的数组，查找value第一次出现的下标，不存在返回-1。</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">int BinarySearch(int array[], int n, int value)</span><br><span class="line">&#123;</span><br><span class="line">    int left &#x3D; 0;</span><br><span class="line">    int right &#x3D; n - 1;</span><br><span class="line"></span><br><span class="line">    while (left &lt;&#x3D; right)  </span><br><span class="line">    &#123;</span><br><span class="line">        int middle &#x3D; left + ((right - left) &gt;&gt; 1);</span><br><span class="line">        if (array[middle] &gt;&#x3D; value)  &#x2F;&#x2F;因为是找到最小的等值下标，所以等于号放在这里</span><br><span class="line">            right &#x3D; middle - 1;</span><br><span class="line">        else</span><br><span class="line">            left &#x3D; middle + 1;</span><br><span class="line">    &#125;</span><br><span class="line">    return array[right + 1] &#x3D;&#x3D; value ? right + 1 : -1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>注意：如果问题改为查找value最后一次出现的下标呢？只需改动两个位置：</p>
-<ol>
-<li><code>if (array[middle] &gt;= value)</code> 中的等号去掉；</li>
-<li><code>return</code> 中<code>right+1</code>改为<code>left-1</code>。</li>
-</ol>
-<h1 id="问题三"><a href="#问题三" class="headerlink" title="问题三"></a>问题三</h1><h2 id="给定一个有序的数组，查找最接近value且大于value的数的下标（如果该数存在多个，返回第一个下标），不存在返回-1。"><a href="#给定一个有序的数组，查找最接近value且大于value的数的下标（如果该数存在多个，返回第一个下标），不存在返回-1。" class="headerlink" title="给定一个有序的数组，查找最接近value且大于value的数的下标（如果该数存在多个，返回第一个下标），不存在返回-1。"></a>给定一个有序的数组，查找最接近value且大于value的数的下标（如果该数存在多个，返回第一个下标），不存在返回-1。</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">int BinarySearch(int array[], int n, int value)</span><br><span class="line">&#123;</span><br><span class="line">    int left &#x3D; 0;</span><br><span class="line">    int right &#x3D; n - 1;</span><br><span class="line"></span><br><span class="line">    while (left &lt;&#x3D; right)  </span><br><span class="line">    &#123;</span><br><span class="line">        int middle &#x3D; left + ((right - left) &gt;&gt; 1);</span><br><span class="line">        if (array[middle] &gt; value)</span><br><span class="line">            right &#x3D; middle - 1;</span><br><span class="line">        else</span><br><span class="line">            left &#x3D; middle + 1;</span><br><span class="line">    &#125;</span><br><span class="line">    return array[right + 1] &gt; value ? right + 1 : -1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>注意：如果问题改为查找最接近value且小于value的数的下标（如果该数存在多个，返回最后一个下标）呢？只需改动两个位置：</p>
-<ol>
-<li><code>if (array[middle] &gt; value)</code>加入一个等号；</li>
-<li><code>return array[right + 1] &gt; value ? right + 1 : -1;</code>改为 <code>return array[left-1] &lt; value ? left - 1 : -1;</code>。</li>
-</ol>
-<hr>
-<p>注意：return 的那个边界都是在上一步中跟随等号的那个边界。</p>
-<hr>
-<p>参考网址：<a href="https://segmentfault.com/a/1190000008699980" target="_blank" rel="noopener">https://segmentfault.com/a/1190000008699980</a></p>
-<p>#leetcode34:Find First and Last Position of Element in Sorted Array</p>
-<p>题意描述：<br><img src="1.png" alt="1"></p>
-<p>code:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;int&gt; searchRange(vector&lt;int&gt;&amp; nums, int target) &#123;</span><br><span class="line">        vector&lt;int&gt; res(2,-1);</span><br><span class="line">        if(nums.empty())  return res;</span><br><span class="line">        int left&#x3D;0;</span><br><span class="line">        int right&#x3D;nums.size()-1;</span><br><span class="line">        &#x2F;&#x2F;找左端点</span><br><span class="line">        while(left&lt;&#x3D;right)&#123;</span><br><span class="line">          &#x2F;&#x2F;  int mid&#x3D;(right+left)&#x2F;2;</span><br><span class="line">            int mid&#x3D; left+ ((right-left)&gt;&gt;1);</span><br><span class="line">            if(nums[mid]&gt;&#x3D;target)</span><br><span class="line">                right&#x3D;mid-1;</span><br><span class="line">            else</span><br><span class="line">                left&#x3D;mid+1;</span><br><span class="line">        &#125;</span><br><span class="line">        res[0]&#x3D;right+1&gt;&#x3D;nums.size()? -1: nums[right+1]&#x3D;&#x3D;target? right+1:-1;</span><br><span class="line">        </span><br><span class="line">        &#x2F;&#x2F;找右端点</span><br><span class="line">        left&#x3D;0;</span><br><span class="line">        right&#x3D;nums.size()-1;</span><br><span class="line">        while(left&lt;&#x3D;right)&#123;</span><br><span class="line">            int mid&#x3D;(right+left)&#x2F;2;</span><br><span class="line">            if(nums[mid]&lt;&#x3D;target)</span><br><span class="line">                left&#x3D;mid+1;</span><br><span class="line">            else</span><br><span class="line">                right&#x3D;mid-1;</span><br><span class="line">        &#125;</span><br><span class="line">        res[1]&#x3D;left-1&lt;0? -1 : nums[left-1]&#x3D;&#x3D;target? left-1:-1;</span><br><span class="line">        return res;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/01/12/leetcode34-%E5%AE%A1%E8%A7%86%E4%BA%8C%E5%88%86%E6%90%9C%E7%B4%A2/" data-id="ck7t8treo000gk6s6dwt57bhx" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%88%B7%E9%A2%98/" rel="tag">刷题</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-leetcoed-回文-没搞清楚的时间复杂度" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/01/09/leetcoed-%E5%9B%9E%E6%96%87-%E6%B2%A1%E6%90%9E%E6%B8%85%E6%A5%9A%E7%9A%84%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/" class="article-date">
-  <time datetime="2019-01-09T01:48:10.000Z" itemprop="datePublished">2019-01-09</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/01/09/leetcoed-%E5%9B%9E%E6%96%87-%E6%B2%A1%E6%90%9E%E6%B8%85%E6%A5%9A%E7%9A%84%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/">leetcoed-回文-没搞清楚的时间复杂度</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>题意描述：<br><img src="1.png" alt="1"></p>
-<p>分析：这道题一看上去，时间复杂度最差就是O(N) 了。<br>我的code：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    bool isPalindrome(string s) &#123;</span><br><span class="line">        if(s.empty())  return true;</span><br><span class="line">        int len&#x3D;s.size();</span><br><span class="line">        int i&#x3D;0,j&#x3D;len-1;</span><br><span class="line">        while(i&lt;j)&#123;</span><br><span class="line">            if(s[i]&gt;&#x3D;&#39;A&#39;&amp;&amp;s[i]&lt;&#x3D;&#39;Z&#39;)&#123;</span><br><span class="line">                s[i]&#x3D;s[i]-&#39;A&#39;+&#39;a&#39;;</span><br><span class="line">            &#125;</span><br><span class="line">            if(he(s,i)&#x3D;&#x3D;false) &#123;</span><br><span class="line">                i++;</span><br><span class="line">                continue;</span><br><span class="line">            &#125;</span><br><span class="line">            if(s[j]&gt;&#x3D;&#39;A&#39;&amp;&amp;s[j]&lt;&#x3D;&#39;Z&#39;)&#123;</span><br><span class="line">                s[j]&#x3D;s[j]-&#39;A&#39;+&#39;a&#39;;</span><br><span class="line">            &#125;</span><br><span class="line">            if(he(s,j)&#x3D;&#x3D;false) &#123;</span><br><span class="line">                j--;</span><br><span class="line">                continue;</span><br><span class="line">            &#125;</span><br><span class="line">            if(s[i]&#x3D;&#x3D;s[j])&#123;</span><br><span class="line">                i++;</span><br><span class="line">                j--;</span><br><span class="line">                continue;</span><br><span class="line">            &#125;</span><br><span class="line">            if(s[i]!&#x3D;s[j])&#123;</span><br><span class="line">                return false;</span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line">        &#125;</span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br><span class="line">    bool he(string s ,int t)&#123;</span><br><span class="line">        if((s[t]&gt;&#x3D;&#39;a&#39;&amp;&amp;s[t]&lt;&#x3D;&#39;z&#39;)||(s[t]&gt;&#x3D;&#39;0&#39;&amp;&amp;s[t]&lt;&#x3D;&#39;9&#39;))  return true;</span><br><span class="line">        else return false;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<p>leetcode判断用时812ms！！！！！！！！！！！！！！！</p>
-<p>大神的code 1：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    bool isPalindrome(string s) &#123;</span><br><span class="line">        int left &#x3D; 0, right &#x3D; s.size() - 1 ;</span><br><span class="line">        while (left &lt; right) &#123;</span><br><span class="line">            if (!isAlphaNum(s[left])) ++left;</span><br><span class="line">            else if (!isAlphaNum(s[right])) --right;</span><br><span class="line">            else if ((s[left] + 32 - &#39;a&#39;) %32 !&#x3D; (s[right] + 32 - &#39;a&#39;) % 32) return false;</span><br><span class="line">            else &#123;</span><br><span class="line">                ++left; --right;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br><span class="line">    bool isAlphaNum(char &amp;ch) &#123;</span><br><span class="line">        if (ch &gt;&#x3D; &#39;a&#39; &amp;&amp; ch &lt;&#x3D; &#39;z&#39;) return true;</span><br><span class="line">        if (ch &gt;&#x3D; &#39;A&#39; &amp;&amp; ch &lt;&#x3D; &#39;Z&#39;) return true;</span><br><span class="line">        if (ch &gt;&#x3D; &#39;0&#39; &amp;&amp; ch &lt;&#x3D; &#39;9&#39;) return true;</span><br><span class="line">        return false;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<p>大神的code 2：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    bool isPalindrome(string s) &#123;</span><br><span class="line">        int left &#x3D; 0, right &#x3D; s.size() - 1 ;</span><br><span class="line">        while (left &lt; right) &#123;</span><br><span class="line">            if (!isalnum(s[left])) ++left;</span><br><span class="line">            else if (!isalnum(s[right])) --right;</span><br><span class="line">            else if ((s[left] + 32 - &#39;a&#39;) %32 !&#x3D; (s[right] + 32 - &#39;a&#39;) % 32) return false;</span><br><span class="line">            else &#123;</span><br><span class="line">                ++left; --right;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<p>leetcode判断用时8ms！！！！！！！！！！！！</p>
-<p>问题出在哪里了呢？</p>
-<p>把我的code改动一点，时间就变成8ms了，如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    bool isPalindrome(string s) &#123;</span><br><span class="line">        if(s.empty())  return true;</span><br><span class="line">        int len&#x3D;s.size();</span><br><span class="line">        int i&#x3D;0,j&#x3D;len-1;</span><br><span class="line">        while(i&lt;j)&#123;</span><br><span class="line">            if(s[i]&gt;&#x3D;&#39;A&#39;&amp;&amp;s[i]&lt;&#x3D;&#39;Z&#39;)&#123;</span><br><span class="line">                s[i]&#x3D;s[i]-&#39;A&#39;+&#39;a&#39;;</span><br><span class="line">            &#125;</span><br><span class="line">            if(isalnum(s[i])&#x3D;&#x3D;false) &#123;</span><br><span class="line">                i++;</span><br><span class="line">                continue;</span><br><span class="line">            &#125;</span><br><span class="line">            if(s[j]&gt;&#x3D;&#39;A&#39;&amp;&amp;s[j]&lt;&#x3D;&#39;Z&#39;)&#123;</span><br><span class="line">                s[j]&#x3D;s[j]-&#39;A&#39;+&#39;a&#39;;</span><br><span class="line">            &#125;</span><br><span class="line">            if(isalnum(s[j])&#x3D;&#x3D;false) &#123;</span><br><span class="line">                j--;</span><br><span class="line">                continue;</span><br><span class="line">            &#125;</span><br><span class="line">            if(s[i]&#x3D;&#x3D;s[j])&#123;</span><br><span class="line">                i++;</span><br><span class="line">                j--;</span><br><span class="line">                continue;</span><br><span class="line">            &#125;</span><br><span class="line">            if(s[i]!&#x3D;s[j])&#123;</span><br><span class="line">                return false;</span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line">        &#125;</span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br><span class="line">  &#x2F;*  bool he(string s ,int t)&#123;</span><br><span class="line">        if((s[t]&gt;&#x3D;&#39;a&#39;&amp;&amp;s[t]&lt;&#x3D;&#39;z&#39;)||(s[t]&gt;&#x3D;&#39;0&#39;&amp;&amp;s[t]&lt;&#x3D;&#39;9&#39;))  return true;</span><br><span class="line">        else return false;</span><br><span class="line">    &#125;*&#x2F;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<p>即，没有用自定义he函数，而是用了库里的isalnum函数来判断是字母或数字。</p>
-<p>或者是用大神code1中的判定函数也会省时。</p>
-<p>所以，找到症因。</p>
-<p>即以下两个代码的比较：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">bool isAlphaNum(char &amp;ch) &#123;</span><br><span class="line">        if (ch &gt;&#x3D; &#39;a&#39; &amp;&amp; ch &lt;&#x3D; &#39;z&#39;) return true;</span><br><span class="line">        if (ch &gt;&#x3D; &#39;A&#39; &amp;&amp; ch &lt;&#x3D; &#39;Z&#39;) return true;</span><br><span class="line">        if (ch &gt;&#x3D; &#39;0&#39; &amp;&amp; ch &lt;&#x3D; &#39;9&#39;) return true;</span><br><span class="line">        return false;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<p>调用时用isAlphaNum(s[j]);</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">bool he(string s ,int t)&#123;</span><br><span class="line">        if((s[t]&gt;&#x3D;&#39;a&#39;&amp;&amp;s[t]&lt;&#x3D;&#39;z&#39;)||(s[t]&gt;&#x3D;&#39;0&#39;&amp;&amp;s[t]&lt;&#x3D;&#39;9&#39;))  return true;</span><br><span class="line">        else return false;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<p>调用时用he(s,j);</p>
-<p>以上，判定函数最好传入最最直接直观的参数，函数写的越简单越好，把逻辑放在如何调用上。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/01/09/leetcoed-%E5%9B%9E%E6%96%87-%E6%B2%A1%E6%90%9E%E6%B8%85%E6%A5%9A%E7%9A%84%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/" data-id="ck7t8treq000lk6s6abv32m1f" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%88%B7%E9%A2%98/" rel="tag">刷题</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-leetcode—-括号题" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/01/09/leetcode%E2%80%94-%E6%8B%AC%E5%8F%B7%E9%A2%98/" class="article-date">
-  <time datetime="2019-01-09T00:10:44.000Z" itemprop="datePublished">2019-01-09</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/01/09/leetcode%E2%80%94-%E6%8B%AC%E5%8F%B7%E9%A2%98/">leetcode—-括号题</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>题目描述：<br><img src="1.png" alt="1"></p>
-<p>思路：摘自（<a href="http://www.cnblogs.com/grandyang/p/4444160.html）" target="_blank" rel="noopener">http://www.cnblogs.com/grandyang/p/4444160.html）</a><br>这道题给定一个数字n，让生成共有n个括号的所有正确的形式，对于这种列出所有结果的题首先还是考虑用递归Recursion来解，由于字符串只有左括号和右括号两种字符，而且最终结果必定是左括号3个，右括号3个。<br>所以我们定义两个变量left和right分别表示剩余左右括号的个数，如果在某次递归时，左括号的个数大于右括号的个数，说明此时生成的字符串中右括号的个数大于左括号的个数，即会出现’)(‘这样的非法串，所以这种情况直接返回，不继续处理。如果left和right都为0，则说明此时生成的字符串已有3个左括号和3个右括号，且字符串合法，则存入结果中后返回。如果以上两种情况都不满足，若此时left大于0，则调用递归函数，注意参数的更新，若right大于0，则调用递归函数，同样要更新参数。</p>
-<p>code：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;string&gt; generateParenthesis(int n) &#123;</span><br><span class="line">        vector&lt;string&gt; re;</span><br><span class="line">        Help(n,n, &quot;&quot; , re);</span><br><span class="line">        return re;</span><br><span class="line">    &#125;</span><br><span class="line">    void Help(int left,int right, string tmp, vector&lt;string&gt; &amp;res)&#123;</span><br><span class="line">        if(left&gt;right)  return;</span><br><span class="line">        if(left&#x3D;&#x3D;0&amp;&amp;right&#x3D;&#x3D;0)  res.push_back(tmp);</span><br><span class="line">        else&#123;</span><br><span class="line">            if(left&gt;0) Help(left-1,right,tmp+&#39;(&#39;,res);</span><br><span class="line">            if(right&gt;0) Help(left,right-1,tmp+&#39;)&#39;,res);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<p>注意：else里面调用子迭代时，一定要判断参数是否大于0！！！！，否则，你应该把参数小于0的情况放在出口里，考虑的必须时全集。</p>
-<hr>
-<p>题目描述：<br><img src="2.png" alt="2"></p>
-<p>分析：<br>要亲命啊。。。<br>法一：栈法————时间复杂度O(N),空间复杂度O(N)<br>思路摘自[<a href="http://www.cnblogs.com/grandyang/p/4424731.html]" target="_blank" rel="noopener">http://www.cnblogs.com/grandyang/p/4424731.html]</a></p>
-<ol>
-<li>用Stack的方法本质上和Valid Parentheses是一样的，一个右括号能消去Stack顶上的一个左括号。</li>
-<li>不同的是，为了能够计算括号对的长度我们还需要记录括号们的下标。</li>
-<li>仔细分析左括号和右括号的功能的不同之处，通过栈来实现。</li>
-</ol>
-<p>具体的方法：右括号不入栈，栈中存下标。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int longestValidParentheses(string s) &#123;</span><br><span class="line">       &#x2F;&#x2F; if(s.empty())  return 0;</span><br><span class="line">        int len&#x3D;s.size();</span><br><span class="line">        stack &lt;int&gt; c;</span><br><span class="line">        int res&#x3D;0;</span><br><span class="line">        int start&#x3D;0;</span><br><span class="line">        for(int i&#x3D;0;i&lt;len;i++)&#123;</span><br><span class="line">            if(s[i]&#x3D;&#x3D;&#39;(&#39;)</span><br><span class="line">                c.push(i);</span><br><span class="line">            else&#123;</span><br><span class="line">                if(c.empty())</span><br><span class="line">                    start&#x3D;i+1;</span><br><span class="line">                else&#123;</span><br><span class="line">                    c.pop();</span><br><span class="line">                    res&#x3D;c.empty()? max(res,i-start+1):max(res,i-c.top());</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-
-<p>法二：Dynamic Programming<br>摘自：[<a href="http://bangbingsyb.blogspot.com/2014/11/leetcode-longest-valid-parentheses.html]" target="_blank" rel="noopener">http://bangbingsyb.blogspot.com/2014/11/leetcode-longest-valid-parentheses.html]</a><br>求极值问题一般想到DP或Greedy，显然Greedy在这里不太适用，只有用DP了。<br>…<br>…<br>法二比法一还费解。。。来日再看。<br><a href="http://cs-cjl.com/2016/09_24_leetcode_32_longest_valid_parentheses" target="_blank" rel="noopener">http://cs-cjl.com/2016/09_24_leetcode_32_longest_valid_parentheses</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/01/09/leetcode%E2%80%94-%E6%8B%AC%E5%8F%B7%E9%A2%98/" data-id="ck7t8trep000ik6s6c4sc6h4d" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%88%B7%E9%A2%98/" rel="tag">刷题</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-pow" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/01/08/pow/" class="article-date">
-  <time datetime="2019-01-08T07:13:49.000Z" itemprop="datePublished">2019-01-08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/01/08/pow/">pow</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>题意描述：<br><img src="1.png" alt="1"></p>
-<p>分析：(摘自：<a href="http://www.cnblogs.com/grandyang/p/4383775.html）" target="_blank" rel="noopener">http://www.cnblogs.com/grandyang/p/4383775.html）</a><br>这道题让我们求x的n次方，如果我们只是简单的用个for循环让x乘以自己n次的话，未免也把LeetCode上的题想的太简单了，一句话形容图样图森破啊。OJ因超时无法通过，所以我们需要优化我们的算法，使其在更有效的算出结果来。我们可以用递归来折半计算，每次把n缩小一半，这样n最终会缩小到0，任何数的0次方都为1，这时候我们再往回乘，如果此时n是偶数，直接把上次递归得到的值算个平方返回即可，如果是奇数，则还需要乘上个x的值。还有一点需要引起我们的注意的是n有可能为负数，对于n是负数的情况，我们可以先用其绝对值计算出一个结果再取其倒数即可。</p>
-<p>code：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    double myPow(double x, int n) &#123;</span><br><span class="line">        if(n&#x3D;&#x3D;0)   return 1;</span><br><span class="line">        if(n&#x3D;&#x3D;1)   return x;</span><br><span class="line">        if(n&#x3D;&#x3D;-1)  return 1&#x2F;x;</span><br><span class="line">        if(n%2&#x3D;&#x3D;0)&#123;</span><br><span class="line">            return myPow(x*x,n&#x2F;2);</span><br><span class="line">        &#125;</span><br><span class="line">        else&#123;</span><br><span class="line">            return myPow(x*x,n&#x2F;2) * (n&gt;0? x:1&#x2F;x);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/01/08/pow/" data-id="ck7t8trev000xk6s64n8y47ay" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%88%B7%E9%A2%98/" rel="tag">刷题</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-merge-k-sorted-lists" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/01/08/merge-k-sorted-lists/" class="article-date">
-  <time datetime="2019-01-08T01:37:06.000Z" itemprop="datePublished">2019-01-08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/01/08/merge-k-sorted-lists/">merge-k-sorted-lists</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="先来看一下-Merge-Two-Sorted-Lists"><a href="#先来看一下-Merge-Two-Sorted-Lists" class="headerlink" title="先来看一下 Merge Two Sorted Lists"></a>先来看一下 Merge Two Sorted Lists</h1><p>题目描述：<br><img src="1.png" alt="1"></p>
-<p>思路一样，两种做法,用时差不多。<br>1）循环：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line"> * Definition for singly-linked list.</span><br><span class="line"> * struct ListNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     ListNode *next;</span><br><span class="line"> *     ListNode(int x) : val(x), next(NULL) &#123;&#125;</span><br><span class="line"> * &#125;;</span><br><span class="line"> *&#x2F;</span><br><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) &#123;</span><br><span class="line">        ListNode *t&#x3D; new ListNode(-1);</span><br><span class="line">        ListNode * p&#x3D;t;</span><br><span class="line">        int tmp;</span><br><span class="line">        while(l1&amp;&amp;l2)&#123;</span><br><span class="line">            tmp&#x3D;l1-&gt;val &lt;&#x3D; l2-&gt;val ? l1-&gt;val: l2-&gt;val;</span><br><span class="line">            p-&gt;next&#x3D; new ListNode(tmp);</span><br><span class="line">            p&#x3D;p-&gt;next;</span><br><span class="line">            if(l1-&gt;val&lt;&#x3D;l2-&gt;val)  l1&#x3D;l1-&gt;next;</span><br><span class="line">            else  l2&#x3D;l2-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">        if(l1)&#123;</span><br><span class="line">            p-&gt;next&#x3D;l1;</span><br><span class="line">        &#125;</span><br><span class="line">        if(l2)&#123;</span><br><span class="line">            p-&gt;next&#x3D;l2;</span><br><span class="line">        &#125;</span><br><span class="line">        return t-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<p>2) 递归</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public: </span><br><span class="line">ListNode * mergeTwoLists (ListNode * l1, ListNode * l2)&#123;</span><br><span class="line">        if(!l1&amp;&amp;!l2)  return NULL;</span><br><span class="line">        if(!l1)   return l2;</span><br><span class="line">        if(!l2)      return l1;</span><br><span class="line">        if(l1-&gt;val&lt;&#x3D;l2-&gt;val)&#123;</span><br><span class="line">            l1-&gt;next&#x3D;mergeTwoLists(l1-&gt;next, l2);</span><br><span class="line">            return l1;</span><br><span class="line">        &#125;</span><br><span class="line">        if(l2-&gt;val&lt;&#x3D;l1-&gt;val)&#123;</span><br><span class="line">            l2-&gt;next&#x3D;mergeTwoLists(l1,l2-&gt;next);</span><br><span class="line">            return l2;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-
-<h1 id="接下来，看-Merge-k-Sorted-Lists"><a href="#接下来，看-Merge-k-Sorted-Lists" class="headerlink" title="接下来，看 Merge k Sorted Lists"></a>接下来，看 Merge k Sorted Lists</h1><p>题目描述：<br><img src="2.png" alt="2"></p>
-<p>分析：方法一：用归并，将merge k不断分解为merge 2的操作<br>（其他博主的说法：两两合并，就是前两个先合并，合并好了再跟第三个，然后第四个直到第k个。这样的思路是对的，但是效率不高，没法通过OJ），所以，要用二分法， 不断地对半划分，直到划分成只有一个或两个链表的任务。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line"> * Definition for singly-linked list.</span><br><span class="line"> * struct ListNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     ListNode *next;</span><br><span class="line"> *     ListNode(int x) : val(x), next(NULL) &#123;&#125;</span><br><span class="line"> * &#125;;</span><br><span class="line"> *&#x2F;</span><br><span class="line">class Solution &#123;</span><br><span class="line">private:</span><br><span class="line">    ListNode *t&#x3D;NULL;</span><br><span class="line">public:</span><br><span class="line">    ListNode* mergeKLists(vector&lt;ListNode*&gt;&amp; lists) &#123;</span><br><span class="line">        return Help(lists, 0, lists.size()-1);</span><br><span class="line">    &#125;</span><br><span class="line">    ListNode * Help(vector&lt;ListNode *&gt; &amp; lists , int begin, int end)&#123;</span><br><span class="line">        if(begin&#x3D;&#x3D;end)   return lists[begin];</span><br><span class="line">        if(begin&lt;end)&#123;</span><br><span class="line">            int mid&#x3D;(begin+end)&#x2F;2;</span><br><span class="line">            ListNode * l1&#x3D; Help(lists, begin, mid);</span><br><span class="line">            ListNode *l2&#x3D;Help(lists, mid+1,end);</span><br><span class="line">            return mergeTwo (l1,l2);</span><br><span class="line">        &#125;</span><br><span class="line">        return 0;</span><br><span class="line">    &#125;</span><br><span class="line">    ListNode * mergeTwo (ListNode * l1, ListNode * l2)&#123;</span><br><span class="line">        if(!l1&amp;&amp;!l2)  return NULL;</span><br><span class="line">        if(!l1)   return l2;</span><br><span class="line">        if(!l2)      return l1;</span><br><span class="line">        if(l1-&gt;val&lt;&#x3D;l2-&gt;val)&#123;</span><br><span class="line">            l1-&gt;next&#x3D;mergeTwo(l1-&gt;next, l2);</span><br><span class="line">            return l1;</span><br><span class="line">        &#125;</span><br><span class="line">        if(l2-&gt;val&lt;&#x3D;l1-&gt;val)&#123;</span><br><span class="line">            l2-&gt;next&#x3D;mergeTwo(l1,l2-&gt;next);</span><br><span class="line">            return l2;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-
-<p>分析：方法二：用最小堆这种数据结构。和最初最初的想法一致，不过当时只是循环。。。。最后超时。。。所以，不同的功能要用适当的数据结构才是。最小堆天生就是多个数排序先最小的！！！<br>利用了最小堆这种数据结构，我们首先把k个链表的首元素都加入最小堆中，它们会自动排好序。然后我们每次取出最小的那个元素加入我们最终结果的链表中，然后把取出元素的下一个元素再加入堆中，下次仍从堆中取出最小的元素做相同的操作，以此类推，直到堆中没有元素了，此时k个链表也合并为了一个链表，返回首节点即可</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">struct cmp &#123;</span><br><span class="line">    bool operator () (ListNode *a, ListNode *b) &#123;</span><br><span class="line">        return a-&gt;val &gt; b-&gt;val;    &#x2F;&#x2F;从小到大的排序？</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"> </span><br><span class="line">class Solution &#123;  </span><br><span class="line">public:  </span><br><span class="line">    ListNode *mergeKLists(vector&lt;ListNode *&gt; &amp;lists) &#123;  </span><br><span class="line">        priority_queue&lt;ListNode*, vector&lt;ListNode*&gt;, cmp&gt; q;</span><br><span class="line">        for (int i &#x3D; 0; i &lt; lists.size(); ++i) &#123;</span><br><span class="line">            if (lists[i]) q.push(lists[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        ListNode *head &#x3D; NULL, *pre &#x3D; NULL, *tmp &#x3D; NULL;</span><br><span class="line">        while (!q.empty()) &#123;</span><br><span class="line">            tmp &#x3D; q.top();</span><br><span class="line">            q.pop();</span><br><span class="line">            if (!pre) head &#x3D; tmp;</span><br><span class="line">            else pre-&gt;next &#x3D; tmp;</span><br><span class="line">            pre &#x3D; tmp;</span><br><span class="line">            if (tmp-&gt;next) q.push(tmp-&gt;next);</span><br><span class="line">        &#125;</span><br><span class="line">        return head;</span><br><span class="line">    &#125;  </span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<p>问题：搞不懂排序函数<br>不是说 return a&lt;b  是从小到大<br>      return a&gt;b  是从大到小嘛</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/01/08/merge-k-sorted-lists/" data-id="ck7t8tres000qk6s62bj90720" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%88%B7%E9%A2%98/" rel="tag">刷题</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
-
-  <nav id="page-nav">
-    
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">下一页 &amp;raquo;</a>
-  </nav>
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">标签</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/" rel="tag">blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/deep-learning/" rel="tag">deep learning</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%88%B7%E9%A2%98/" rel="tag">刷题</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BF%83%E6%83%85/" rel="tag">心情</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%BD%AF%E4%BB%B6-photoshop/" rel="tag">软件 photoshop</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">标签云</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/blog/" style="font-size: 10px;">blog</a> <a href="/tags/deep-learning/" style="font-size: 16.67px;">deep learning</a> <a href="/tags/%E5%88%B7%E9%A2%98/" style="font-size: 20px;">刷题</a> <a href="/tags/%E5%BF%83%E6%83%85/" style="font-size: 13.33px;">心情</a> <a href="/tags/%E8%BD%AF%E4%BB%B6-photoshop/" style="font-size: 10px;">软件 photoshop</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">三月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">三月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">一月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">十二月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">十一月 2018</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2020/03/16/hello-world/">Hello World</a>
-          </li>
-        
-          <li>
-            <a href="/2019/03/09/%E5%86%B3%E7%AD%96%E6%A0%91/">决策树</a>
-          </li>
-        
-          <li>
-            <a href="/2019/01/23/leetcode-208/">leetcode-208</a>
-          </li>
-        
-          <li>
-            <a href="/2019/01/14/sliding-window/">sliding-window</a>
-          </li>
-        
-          <li>
-            <a href="/2019/01/12/leetcode46-permutations/">leetcode46-permutations</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2020 xyz<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
   
 </nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/16/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="xyz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/photo.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="花儿的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/03/16/hello-world/" itemprop="url">Hello World</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-03-16T00:12:09+08:00">
+                2020-03-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2020/03/16/hello-world/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2020/03/16/hello-world/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
     
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
+      
+      
+
+      
+        
+          
+          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new post1$ hexo new "My New Post"
+
+More info: Writing
+Run server1$ hexo server
+
+More 
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/03/16/hello-world/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
 
   
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
 
   
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/09/%E5%86%B3%E7%AD%96%E6%A0%91/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="xyz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/photo.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="花儿的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/09/%E5%86%B3%E7%AD%96%E6%A0%91/" itemprop="url">决策树</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-09T13:29:41+08:00">
+                2019-03-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/03/09/%E5%86%B3%E7%AD%96%E6%A0%91/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/03/09/%E5%86%B3%E7%AD%96%E6%A0%91/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          决策树是一种预测模型，代表的是一种对象特征属性与对象目标值之间的一种映射关系。决策树仅有单一输出，如果有多个输出，可以分别建立独立的决策树以处理不同的输出。
+决策树可以转换成一个if-then规则的集合，也可看作是定义在特征空间划分上的类的条件概率分布。
+决策树学习的三个步骤：特征选择（熵-信息增益、信息增益率、基尼指数）、决策树的生成（考虑的时局部最优）、决策树的修剪（考虑的时全局最优）。发生过拟合时，需要对决策树进行自下而上的剪枝。往往时通过极小化决策树整体的损失函数或代价函数来实现的。
+决策树分为分类树和回归树两种，分类树对离散变量做决策，输出是样本的预测类别；回归树对连续变量做决策，输
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/03/09/%E5%86%B3%E7%AD%96%E6%A0%91/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/23/leetcode-208/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="xyz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/photo.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="花儿的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/01/23/leetcode-208/" itemprop="url">leetcode-208</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-23T17:50:11+08:00">
+                2019-01-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/01/23/leetcode-208/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/01/23/leetcode-208/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          题意描述：
+这道题啊，让我再感受一遍构造函数是啥子，有什么意义。new是用来干嘛的，用来创建一对象，并赋值给指针的。new后面一定跟着是类名（即构造函数）。
+code:
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758class TrieNode&#123;    public:    bool end;    TrieNode * child[26];    TrieNode():end(false)&#123;&#x2F;&#
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/01/23/leetcode-208/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/14/sliding-window/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="xyz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/photo.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="花儿的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/01/14/sliding-window/" itemprop="url">sliding-window</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-14T18:23:28+08:00">
+                2019-01-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/01/14/sliding-window/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/01/14/sliding-window/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          题意描述： string minWindow(string s, string t)   时间复杂度为O(N)   burte force肯定是不能用的思路：
+
+要降低时间复杂度，就是要用空间换时间
+可以不止一个循环，但不要循环套循环Input: S = “ADBANC”, T = “ABC”Output: “BANC”
+
+一个有趣的现象，我们是先扩展，再收缩，就好像一个窗口一样，先扩大右边界，然后再收缩左边界，上面的例子中我们是右边界无法扩大了后才开始收缩左边界，实际上对于复杂的例子，有可能是扩大右边界，然后缩小一下左边界，然后再扩大右边界等等。这就很像一个不停滑动的窗口了，这就是大名鼎鼎的
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/01/14/sliding-window/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/12/leetcode46-permutations/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="xyz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/photo.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="花儿的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/01/12/leetcode46-permutations/" itemprop="url">leetcode46-permutations</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-12T18:53:56+08:00">
+                2019-01-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/01/12/leetcode46-permutations/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/01/12/leetcode46-permutations/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          #熟读唐诗三百首，不会作诗也能吟。
+12345678910111213141516171819202122class Solution &#123;public:    vector&lt;vector&lt;int&gt;&gt; permute(vector&lt;int&gt;&amp; nums) &#123;        vector&lt;vector&lt;int&gt;&gt; res;        if(nums.empty())  return res;        vector&lt;int&gt; tmp;        Help(nums,res,0);    
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/01/12/leetcode46-permutations/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/12/leetcode34-%E5%AE%A1%E8%A7%86%E4%BA%8C%E5%88%86%E6%90%9C%E7%B4%A2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="xyz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/photo.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="花儿的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/01/12/leetcode34-%E5%AE%A1%E8%A7%86%E4%BA%8C%E5%88%86%E6%90%9C%E7%B4%A2/" itemprop="url">leetcode34-审视二分搜索</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-12T14:13:54+08:00">
+                2019-01-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/01/12/leetcode34-%E5%AE%A1%E8%A7%86%E4%BA%8C%E5%88%86%E6%90%9C%E7%B4%A2/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/01/12/leetcode34-%E5%AE%A1%E8%A7%86%E4%BA%8C%E5%88%86%E6%90%9C%E7%B4%A2/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          motivation：能想到O(LOG N) 就是二分搜索————代码写不出来。。。奇了怪
+看了一些资料————十个二分9个错，哈哈
+问题一给定一个有序的数组，查找value是否在数组中，不存在返回-1。12345678910111213141516171819202122int BinarySearch(int array[], int n, int value)&#123;    int left &#x3D; 0;    int right &#x3D; n - 1;    &#x2F;&#x2F;如果这里是int right &#x3D; n 的话，那么下面有两处地方需要修改，以保证一
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/01/12/leetcode34-%E5%AE%A1%E8%A7%86%E4%BA%8C%E5%88%86%E6%90%9C%E7%B4%A2/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/09/leetcoed-%E5%9B%9E%E6%96%87-%E6%B2%A1%E6%90%9E%E6%B8%85%E6%A5%9A%E7%9A%84%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="xyz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/photo.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="花儿的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/01/09/leetcoed-%E5%9B%9E%E6%96%87-%E6%B2%A1%E6%90%9E%E6%B8%85%E6%A5%9A%E7%9A%84%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/" itemprop="url">leetcoed-回文-没搞清楚的时间复杂度</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-09T09:48:10+08:00">
+                2019-01-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/01/09/leetcoed-%E5%9B%9E%E6%96%87-%E6%B2%A1%E6%90%9E%E6%B8%85%E6%A5%9A%E7%9A%84%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/01/09/leetcoed-%E5%9B%9E%E6%96%87-%E6%B2%A1%E6%90%9E%E6%B8%85%E6%A5%9A%E7%9A%84%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          题意描述：
+分析：这道题一看上去，时间复杂度最差就是O(N) 了。我的code：
+1234567891011121314151617181920212223242526272829303132333435363738class Solution &#123;public:    bool isPalindrome(string s) &#123;        if(s.empty())  return true;        int len&#x3D;s.size();        int i&#x3D;0,j&#x3D;len-1;        while(i&lt;j)&#123;
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/01/09/leetcoed-%E5%9B%9E%E6%96%87-%E6%B2%A1%E6%90%9E%E6%B8%85%E6%A5%9A%E7%9A%84%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/09/leetcode%E2%80%94-%E6%8B%AC%E5%8F%B7%E9%A2%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="xyz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/photo.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="花儿的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/01/09/leetcode%E2%80%94-%E6%8B%AC%E5%8F%B7%E9%A2%98/" itemprop="url">leetcode—-括号题</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-09T08:10:44+08:00">
+                2019-01-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/01/09/leetcode%E2%80%94-%E6%8B%AC%E5%8F%B7%E9%A2%98/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/01/09/leetcode%E2%80%94-%E6%8B%AC%E5%8F%B7%E9%A2%98/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          题目描述：
+思路：摘自（http://www.cnblogs.com/grandyang/p/4444160.html）这道题给定一个数字n，让生成共有n个括号的所有正确的形式，对于这种列出所有结果的题首先还是考虑用递归Recursion来解，由于字符串只有左括号和右括号两种字符，而且最终结果必定是左括号3个，右括号3个。所以我们定义两个变量left和right分别表示剩余左右括号的个数，如果在某次递归时，左括号的个数大于右括号的个数，说明此时生成的字符串中右括号的个数大于左括号的个数，即会出现’)(‘这样的非法串，所以这种情况直接返回，不继续处理。如果left和right都为0，则说明此时生
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/01/09/leetcode%E2%80%94-%E6%8B%AC%E5%8F%B7%E9%A2%98/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/08/pow/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="xyz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/photo.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="花儿的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/01/08/pow/" itemprop="url">pow</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-08T15:13:49+08:00">
+                2019-01-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/01/08/pow/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/01/08/pow/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          题意描述：
+分析：(摘自：http://www.cnblogs.com/grandyang/p/4383775.html）这道题让我们求x的n次方，如果我们只是简单的用个for循环让x乘以自己n次的话，未免也把LeetCode上的题想的太简单了，一句话形容图样图森破啊。OJ因超时无法通过，所以我们需要优化我们的算法，使其在更有效的算出结果来。我们可以用递归来折半计算，每次把n缩小一半，这样n最终会缩小到0，任何数的0次方都为1，这时候我们再往回乘，如果此时n是偶数，直接把上次递归得到的值算个平方返回即可，如果是奇数，则还需要乘上个x的值。还有一点需要引起我们的注意的是n有可能为负数，对于n是负
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/01/08/pow/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/08/merge-k-sorted-lists/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="xyz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/photo.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="花儿的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/01/08/merge-k-sorted-lists/" itemprop="url">merge-k-sorted-lists</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-08T09:37:06+08:00">
+                2019-01-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/01/08/merge-k-sorted-lists/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/01/08/merge-k-sorted-lists/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          先来看一下 Merge Two Sorted Lists题目描述：
+思路一样，两种做法,用时差不多。1）循环：
+123456789101112131415161718192021222324252627282930&#x2F;** * Definition for singly-linked list. * struct ListNode &#123; *     int val; *     ListNode *next; *     ListNode(int x) : val(x), next(NULL) &#123;&#125; * &#125;; *&#x2F;class Soluti
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/01/08/merge-k-sorted-lists/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">&lt;i class&#x3D;&quot;fa fa-angle-right&quot;&gt;&lt;&#x2F;i&gt;</a>
+  </nav>
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/photo.jpg"
+                alt="xyz" />
+            
+              <p class="site-author-name" itemprop="name">xyz</p>
+              <p class="site-description motion-element" itemprop="description">自信，从容，待人真诚。</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%20%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">tags</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:zlj9155@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+          
+          <!--音乐播放器 -->
+          <div>
+          
+          <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=478507889&auto=1&height=66"></iframe>
+          
+          </div>
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                友情链接
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://taobao.com/" title="小苹果" target="_blank">小苹果</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">xyz</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count"></span>
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
 
 
 
 
-<script src="/js/script.js"></script>
+        
 
 
 
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
 
   </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/canvas_lines.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'OYgqgjXfyEIMdcn8HbhVO9s6-gzGzoHsz',
+        appKey: 'XzFdpEKW9YeGgoxlPJA08De1',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+   <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+   <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+   <script type="text/javascript" src="/js/src/fireworks.js"></script>
+
 </body>
 </html>
