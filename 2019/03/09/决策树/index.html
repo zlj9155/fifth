@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>决策树 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="决策树是一种预测模型，代表的是一种对象特征属性与对象目标值之间的一种映射关系。决策树仅有单一输出，如果有多个输出，可以分别建立独立的决策树以处理不同的输出。 决策树可以转换成一个if-then规则的集合，也可看作是定义在特征空间划分上的类的条件概率分布。 决策树学习的三个步骤：特征选择（熵-信息增益、信息增益率、基尼指数）、决策树的生成（考虑的时局部最优）、决策树的修剪（考虑的时全局最优）。发生过">
+<meta property="og:type" content="article">
+<meta property="og:title" content="决策树">
+<meta property="og:url" content="http://yoursite.com/2019/03/09/%E5%86%B3%E7%AD%96%E6%A0%91/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="决策树是一种预测模型，代表的是一种对象特征属性与对象目标值之间的一种映射关系。决策树仅有单一输出，如果有多个输出，可以分别建立独立的决策树以处理不同的输出。 决策树可以转换成一个if-then规则的集合，也可看作是定义在特征空间划分上的类的条件概率分布。 决策树学习的三个步骤：特征选择（熵-信息增益、信息增益率、基尼指数）、决策树的生成（考虑的时局部最优）、决策树的修剪（考虑的时全局最优）。发生过">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://yoursite.com/2019/03/09/%E5%86%B3%E7%AD%96%E6%A0%91/1.png">
+<meta property="og:image" content="http://yoursite.com/2019/03/09/%E5%86%B3%E7%AD%96%E6%A0%91/2.png">
+<meta property="og:image" content="http://yoursite.com/2019/03/09/%E5%86%B3%E7%AD%96%E6%A0%91/3.png">
+<meta property="og:image" content="http://yoursite.com/2019/03/09/%E5%86%B3%E7%AD%96%E6%A0%91/4.png">
+<meta property="og:image" content="http://yoursite.com/2019/03/09/%E5%86%B3%E7%AD%96%E6%A0%91/5.png">
+<meta property="og:image" content="http://yoursite.com/2019/03/09/%E5%86%B3%E7%AD%96%E6%A0%91/6.png">
+<meta property="og:image" content="http://yoursite.com/2019/03/09/%E5%86%B3%E7%AD%96%E6%A0%91/7.png">
+<meta property="og:image" content="http://yoursite.com/2019/03/09/%E5%86%B3%E7%AD%96%E6%A0%91/8.png">
+<meta property="og:image" content="http://yoursite.com/2019/03/09/%E5%86%B3%E7%AD%96%E6%A0%91/9.png">
+<meta property="og:image" content="http://yoursite.com/2019/03/09/%E5%86%B3%E7%AD%96%E6%A0%91/10.png">
+<meta property="og:image" content="http://yoursite.com/2019/03/09/%E5%86%B3%E7%AD%96%E6%A0%91/11.png">
+<meta property="og:image" content="http://yoursite.com/2019/03/09/%E5%86%B3%E7%AD%96%E6%A0%91/12.png">
+<meta property="og:image" content="http://yoursite.com/2019/03/09/%E5%86%B3%E7%AD%96%E6%A0%91/13.png">
+<meta property="og:image" content="http://yoursite.com/2019/03/09/%E5%86%B3%E7%AD%96%E6%A0%91/14.png">
+<meta property="og:image" content="http://yoursite.com/2019/03/09/%E5%86%B3%E7%AD%96%E6%A0%91/15.png">
+<meta property="og:image" content="http://yoursite.com/2019/03/09/%E5%86%B3%E7%AD%96%E6%A0%91/16.png">
+<meta property="og:image" content="http://yoursite.com/2019/03/09/%E5%86%B3%E7%AD%96%E6%A0%91/17.png">
+<meta property="og:image" content="http://yoursite.com/2019/03/09/%E5%86%B3%E7%AD%96%E6%A0%91/18.png">
+<meta property="og:image" content="http://yoursite.com/2019/03/09/%E5%86%B3%E7%AD%96%E6%A0%91/19.png">
+<meta property="og:image" content="http://yoursite.com/2019/03/09/%E5%86%B3%E7%AD%96%E6%A0%91/20.png">
+<meta property="og:image" content="http://yoursite.com/2019/03/09/%E5%86%B3%E7%AD%96%E6%A0%91/21.png">
+<meta property="og:image" content="http://yoursite.com/2019/03/09/%E5%86%B3%E7%AD%96%E6%A0%91/22.png">
+<meta property="og:image" content="http://yoursite.com/2019/03/09/%E5%86%B3%E7%AD%96%E6%A0%91/23.png">
+<meta property="og:image" content="http://yoursite.com/2019/03/09/%E5%86%B3%E7%AD%96%E6%A0%91/24.png">
+<meta property="og:image" content="http://yoursite.com/2019/03/09/%E5%86%B3%E7%AD%96%E6%A0%91/25.png">
+<meta property="og:image" content="http://yoursite.com/2019/03/09/%E5%86%B3%E7%AD%96%E6%A0%91/26.png">
+<meta property="og:image" content="http://yoursite.com/2019/03/09/%E5%86%B3%E7%AD%96%E6%A0%91/27.png">
+<meta property="article:published_time" content="2019-03-09T05:29:41.000Z">
+<meta property="article:modified_time" content="2019-03-09T05:46:58.000Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2019/03/09/%E5%86%B3%E7%AD%96%E6%A0%91/1.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-决策树" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/03/09/%E5%86%B3%E7%AD%96%E6%A0%91/" class="article-date">
+  <time datetime="2019-03-09T05:29:41.000Z" itemprop="datePublished">2019-03-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      决策树
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>决策树是一种预测模型，代表的是一种对象特征属性与对象目标值之间的一种映射关系。<font color=#D2691E>决策树仅有单一输出，如果有多个输出，可以分别建立独立的决策树以处理不同的输出。</font></p>
+<p><font color=#6495ED>决策树可以转换成一个if-then规则的集合，也可看作是定义在特征空间划分上的类的条件概率分布。</font></p>
+<p>决策树学习的三个步骤：特征选择（熵-信息增益、信息增益率、基尼指数）、决策树的生成（考虑的时局部最优）、决策树的修剪（考虑的时全局最优）。<br>发生过拟合时，需要对决策树进<font color=#D2691E>行自下而上的剪枝</font>。往往时通过极小化决策树整体的损失函数或代价函数来实现的。</p>
+<p>决策树分为分类树和回归树两种，<font color=#D2691E><b>分类树</b>对<b>离散</b>变量做决策，输出是样本的预测类别；<b>回归树</b>对<b>连续</b>变量做决策，输出是一个实数 。</font>本文介绍ID3、C4.5和CART这三种构造决策树的算法。</p>
+<p><b>ID3算法（多叉树）</b></p>
+<p>奥卡姆剃刀：给定两个具有相同泛化误差的模型，较简单的模型比较复杂的模型更可取。</p>
+<p>建立在“奥卡姆剃刀”的基础上，即<font color=#D2691E>越是小型的决策树越优于大的决策树</font>。ID3算法中根据特征选择和信息增益评估，每次<font color=#D2691E>选择信息增益最大的特征作为分支标准。</font>为了去除过度数据匹配的问题，可通过裁剪合并相邻的无法产生大量信息增益的叶子节点（例如设置信息增益阀值）。</p>
+<p>使用<font color=#D2691E>信息增益有一个缺点</font>，那就是它偏向于具有大量值的属性（对可取值较多的属性有所偏好）–就是说在训练集中，某个属性所取的不同值的个数越多，那么越有可能拿它来作为分裂属性，而这样做有时候是没有意义的。</p>
+<p>此外，ID3不能处理连续分布的数据特征。</p>
+<p>① 信息熵<br>熵是对不确定性的度量。信息熵可以被认为是系统有序化程度的一个度量：将其定义为离散随机事件出现的概率，一个系统越是有序，信息熵就越低，反之<font color=#D2691E>一个系统越是混乱，它的信息熵就越高。</font></p>
+<p><img src="1.png" alt="1"></p>
+<p>② 信息增益（不限定分了几个枝）<br>在决策树的分类问题中，信息增益(information gain)是针对一个特定的分支标准，<font color=#D2691E>计算原有数据的信息熵与引入该分支标准后的信息熵之差。</font>信息增益的定义如下：<br><img src="2.png" alt="2"></p>
+<p>接下来以天气的例子来说明ID3算法。下图是样本数据集，每个样本包括4个特征“Outlook”，“Temperature”,”Humidity”和“Windy”，模型的分类目标是play或者not play。<br><img src="3.png" alt="3"></p>
+<p>表中一共包含14个样本，包括9个正样本和5个负样本，并且是一个二分类问题，那么当前信息熵的计算如下：<br><img src="4.png" alt="4"><br>接下来以表中的Outlook属性作为分支标准，根据sunny、overcast、rain这三个属性值可将数据分为三类，如下图所示：<br><img src="5.png" alt="5"></p>
+<p>引入该分支标准后，数据被分成了3个分支，每个分支的信息熵计算如下：<br><img src="6.png" alt="6"></p>
+<p>③ 算法思想<br>ID3算法的基本思想是：首先计算出原始数据集的信息熵，然后依次将数据中的每一个特征作为分支标准，并计算其相对于原始数据的信息增益，选择最大信息增益的分支标准来划分数据，因为信息增益越大，区分样本的能力就越强，越具有代表性。重复上述过程从而生成一棵决策树，很显然这是一种<font color=#D2691E>自顶向下</font>的贪心策略。</p>
+<p> <b>C4.5算法（多叉树）</b><br>C4.5算法是对ID3算法的改进，C4.5克服了ID3的2个缺点：<br><font color=#9400D3>1）用信息增益选择属性时偏向于选择分枝比较多的属性值，即取值多的属性<br>2）不能处理连续属性</font><br>对于离散特征，C4.5算法<font color=#D2691E>不直接使用信息增益，而是使用“增益率”（gain ratio）</font>来选择最优的分支标准，增益率的定义如下：<br><img src="7.png" alt="7"><br>作为分支标准的属性可取值越多，则IV 的值越大。<br>需要注意的是：<font color=#D2691E> 增益率准则对可取值数目较少的属性有所偏好，</font><br>因此C4.5算法并不是直接选择增益率最大的属性作为分支标准，而是<font color=#D2691E>先从候选属性中找出信息增益高于平均水平的属性，再从中选择增益率最高的。</font></p>
+<p>C4.5算法<font color=#D2691E>处理连续属性的方法是先把连续属性转换为离散属性再进行处理。</font>虽然本质上属性的取值是连续的，但对于有限的采样数据它是离散的，如果有N条样本，那么我们有N-1种离散化的方法：&lt;=vj的分到左子树，&gt;vj的分到右子树。计算这N-1种情况下最大的信息增益率。在离散属性上只需要计算1次信息增益率，而在连续属性上却需要计算N-1次，计算量是相当大的。通过以下办法可以减少计算量：对于连续属性先按大小进行排序，只有在分类发生改变的地方才需要切开。比如对Temperature进行排序：<br><img src="8.png" alt="8"></p>
+<p>本来有13种离散化的情况，现在只需计算7种。如果利用增益率来选择连续值属性的分界点，会导致一些副作用。分界点将样本分成两个部分，这两个部分的样本个数之比也会影响增益率。根据增益率公式，我们可以发现，当分界点能够把样本分成数量相等的两个子集时（我们称此时的分界点为等分分界点），增益率的抑制会被最大化，因此等分分界点被过分抑制了。子集样本个数能够影响分界点，显然不合理。<font color=#D2691E>因此在决定分界点时还是采用增益这个指标，而选择属性的时候才使用增益率这个指标。</font></p>
+<p><b>CART算法（二叉树）</b><br>CART（Classification And Regression Tree）算法既可以用于创建分类树，也可以用于创建回归树。CART算法的重要特点包含以下三个方面：<br>1）<font color=#8B008B> 二分</font>(Binary Split)：在每次判断过程中，都是对样本数据进行二分。由于CART算法构成的是一个二叉树，它在每一步的决策时只能是“是”或者“否”，即使一个feature有多个取值，也是把数据分为两部分<br>2） <font color=#8B008B>单变量分割</font>(Split Based on One Variable)：每次最优划分都是针对单个变量。<br>3） <font color=#8B008B>剪枝策略</font>：CART算法的关键点，剪枝过程的重要性要比树生成过程更为重要，对于不同的划分标准生成的最大树(Maximum Tree)，在剪枝之后都能够保留最重要的属性划分，差别不大。反而是剪枝方法对于最优树的生成更为关键。</p>
+<p><font color=#008000>CART决策树的生成是递归的构建二叉决策树的过程。<b>对回归树用平方误差最小化准则；对分类树用基尼指数最小化准则</b>，进行特征选择，生成二叉树。</font><br>① CART分类决策树<br>GINI指数<br>CART的分类树<font color=#D2691E>用GINI指数选择最优特征，同时决定该特征的最优二值切分点</font>。GINI指数主要是度量数据划分的不纯度，是介于0~1之间的数。<font color=#D2691E>GINI值越小，表明样本集合的纯净度越高；</font>GINI值越大表明样本集合的类别越杂乱（这一点与熵相似）。直观来说，GINI指数反映了从数据集中随机抽出两个样本，其类别不一致的概率。<font color=#D2691E>不考虑剪枝情况下，分类决策树递归创建过程中就是每次选择GiniGain最小的节点做分叉点，直至子数据集都属于同一类或者所有特征用光</font>了。计算过程如下：<br><img src="9.png" alt="9"></p>
+<p><font color=#D2691E>特征双化</font><br>如果特征的值是离散的，并且是具有两个以上的取值，则CART算法会考虑将目标类别合并成两个超类别（双化）。因为CART树是二叉树，所以对于有N(N≥3)个取值的离散特征，在处理时也只能有两个分支，这就要通过组合创建二取值序列并取GiniGain最小者作为树分叉决策点。例如，某特征值具有[‘young’,’middle’,’old’]三个取值,那么二分序列会有如下3种可能性：[((‘young’,), (‘middle’, ‘old’)), ((‘middle’,), (‘young’, ‘old’)), ((‘old’,), (‘young’, ‘middle’))]。</p>
+<p><font color=#D2691E>对连续特征的处理</font><br>如果特征的取值范围是连续的，则CART算法需要把连续属性转换为离散属性再进行处理。如果有N条样本，那么我们有N-1种离散化的方法：&lt;=vj的分到左子树，&gt;vj的分到右子树。取这N-1种情况下GiniGain最小的离散化方式。</p>
+<p>下面举一个简单的例子来说明上述过程：<br><img src="10.png" alt="10"></p>
+<p>在上述图中，每个样本有3个特征，分别是有房情况，婚姻状况和年收入，其中有房情况和婚姻状况是离散的取值，而年收入是连续的取值。拖欠贷款者属于分类的结果。现在来看有房情况这个特征，那么按照它划分后的Gini指数计算如下： </p>
+<p><img src="11.png" alt="11"><br>而对于婚姻状况特征来说，它的取值有3种，按照每种属性值分裂后Gini指标计算如下：<br><img src="12.png" alt="12"><br>GINI越小，表示样本的分类越纯，所以我们要选择的是将单身和离异放在一起。</p>
+<p>最后还有一个取值连续的特征，年收入，它的取值是连续的，那么连续的取值采用分裂点进行分裂。如下：<br><img src="13.png" alt="13"></p>
+<p>根据这样的分裂规则CART算法就能完成建树过程。<br>算法停止的条件是节点中的样本个数小于预定阈值，或样本集的基尼指数小于预定阈值（样本基本属于同一类），或者没有更多特征了。<br>② CART回归决策树<br>一个回归树对应着输入空间（即特征空间）的一个划分以及在划分的单元上的输出值。假设已经将输入空间划分为M个单元R1,R2,….,RM,并且在每个单元RM上优异个固定的输出值CM</p>
+<p><img src="14.png" alt="14"></p>
+<p><font color=#D2691E>CART的剪枝</font>（递归的从树的叶节点向上回缩）<br>分析CART的递归建树过程，不难发现它实质上存在着一个数据过度拟合问题。<br>决策树常用的剪枝常用的简直方法有两种：<font color=#1E90FF>预剪枝(Pre-Pruning)和后剪枝(Post-Pruning)。</font><br>预剪枝是根据一些原则及早的停止树增长，如树的深度达到用户所要的深度、节点中样本个数少于用户指定个数、不纯度指标下降的最大幅度小于用户指定的幅度等；<br>后剪枝则是通过在完全生长的树上剪去分枝实现的，通过删除节点的分支来剪去树节点，可以使用的后剪枝方法有多种，比如：代价复杂性剪枝、最小误差剪枝、悲观误差剪枝等等。</p>
+<p>一个简单实例<br>为了便于理解，下面举一个简单实例。训练数据见下表，目标是得到一棵最小二乘回归树。<br><img src="15.png" alt="15"></p>
+<ol>
+<li>选择最优切分变量j与最优切分点s</li>
+</ol>
+<p>在本数据集中，只有一个变量，因此最优切分变量自然是x。</p>
+<p>接下来我们考虑9个切分点[1.5,2.5,3.5,4.5,5.5,6.5,7.5,8.5,9.5] </p>
+<p><img src="16.png" alt="16"></p>
+<p><img src="17.png" alt="17"><br>例如，取 s=1.5。此时 R1={1}, R2={2,3,4,5,6,7,8,9,10}， 这两个区域的输出值分别为：<br>c1=5.56,  c2=19(5.7+5.91+6.4+6.8+7.05+8.9+8.7+9+9.05)=7.50  得到下表：<br><img src="18.png" alt="18"></p>
+<p>把c1,c2的值代入到上式，如：m(1.5)=0+15.72=15.72 。同理，可获得下表：<br><img src="19.png" alt="19"><br>显然取 s=6.5时，m(s)最小。因此，第一个划分变量j=x,s=6.5</p>
+<p>综上：<br><img src="20.png" alt="20"><br><img src="21.png" alt="21"><br><img src="22.png" alt="22"></p>
+<p><font color=#1E90FF>回归树和线性回归的对比：</font></p>
+<p><img src="23.png" alt="23"><br><font color=#D2691E>总结：</font><br>实际上，回归树总体流程类似于分类树，分枝时穷举每一个特征的每一个阈值，来寻找最优切分特征j和最优切分点s，衡量的方法是平方误差最小化。分枝直到达到预设的终止条件(如叶子个数上限)就停止。</p>
+<p>当然，处理具体问题时，单一的回归树肯定是不够用的。可以利用集成学习中的boosting框架，对回归树进行改良升级，得到的新模型就是提升树（Boosting Decision Tree），在进一步，可以得到梯度提升树（Gradient Boosting Decision Tree，GBDT），再进一步可以升级到XGBoost。</p>
+<p>————————————————————————————————————————————<br>友情分割线<br>————————————————————————————————————————————</p>
+<p>当前，最火的两类算法莫过于<b>神经网络算法</b>（CNN、RNN、LSTM等）与<b>树形算法（随机森林、GBDT、XGBoost等）</b>，树形算法的基础就是<b>决策树</b>。<br>下面介绍，回归树+boosting框架，BDT,GBDT,XGB</p>
+<p>回归与分类不同，就在于其目标变量是连续数值型。</p>
+<p>RF、GBDT和XGBoost都属于集成学习（Ensemble Learning），集成学习的目的是通过结合多个基学习器的预测结果来改善单个学习器的泛化能力和鲁棒性。<br>先去复习一下继承学习——boosting  &amp;&amp;  bagging</p>
+<p>根据个体学习器的生成方式，目前的集成学习方法大致分为两大类：即个体学习器之间存在强依赖关系、必须串行生成的序列化方法，以及个体学习器间不存在强依赖关系、可同时生成的并行化方法；前者的代表就是Boosting，后者的代表是Bagging和“随机森林”（Random Forest）。</p>
+<p><b>1、RF<br>RF(特征）:自助抽样，特征采样，无剪枝，投票，减小方差（bagging）</b><br>1.1 原理<br>　　提到随机森林，就不得不提Bagging，Bagging可以简单的理解为：<font color=#D2691E>放回抽样，多数表决（分类）或简单平均（回归）,同时Bagging的基学习器之间属于并列生成，不存在强依赖关系。 </font><br>　　Random Forest（随机森林）是Bagging的扩展变体，它在以决策树 为基学习器构建Bagging集成的基础上，进一步在决策树的训练过程中引入了随机特征选择，因此可以概括RF包括四个部分：<b>1、随机选择样本（放回抽样）；<font color=#D2691E>2、随机选择特征；</font>3、构建决策树；4、随机森林投票（平均）。 </b></p>
+<p>在构建决策树的时候，RF的每棵决策树都最大可能的进行生长而不进行剪枝；在对预测输出进行结合时，RF通常对分类问题使用简单投票法，回归任务使用简单平均法 </p>
+<p>RF的重要特性是不用对其进行交叉验证或者使用一个独立的测试集获得无偏估计，它可以在内部进行评估，也就是说<b>在生成的过程中可以对误差进行无偏估计</b>，由于每个基学习器只使用了训练集中约63.2%的样本，剩下约36.8%的样本可用做验证集来对其泛化性能进行“包外估计”。</p>
+<p>　　<font color=#D2691E>RF和Bagging对比：RF相比于普通的bagging，不仅泛化误差地，而且训练效率高（用时少)。</font>RF的起始性能较差，特别当只有一个基学习器时，随着学习器数目增多，随机森林通常会收敛到更低的泛化误差。随机森林的训练效率也会高于Bagging，因为在单个决策树的构建中，Bagging使用的是‘确定性’决策树，在选择特征划分结点时，要对所有的特征进行考虑，而随机森林使用的是‘随机性’特征数，只需考虑特征的子集。<br>方差减小，而且方差的减小补偿了偏差的增大，因此总体而言是更好的模型。</p>
+<p>1.2<b> 优缺点</b><br>　　随机森林的优点较多，简单总结：<br>                 1）在数据集上表现良好，训练速度快、预测准确度较高；<br>                 2）能够处理很高维的数据，并且不用特征选择，而且在训练完后，给出特征的重要性；<br>                 3）容易做成并行化方法。<br>　　RF的缺点：1）在噪声较大的分类或者回归问题上会过拟合。2）只用了特征学习，没有用到数值优化，因此，GBDT出现。</p>
+<p>2、<b>GBDT（使用了决策树的gradient boosting）（又称Gradient Boosted Decision Tree/Grdient Boosted Regression Tree）</b><br>　　提GBDT之前，谈一下Boosting，Boosting是一种与Bagging很类似的技术。不论是Boosting还是Bagging，所使用的多个分类器类型都是一致的。但是在前者当中，不同的分类器是通过串行训练而获得的，每个新分类器都根据已训练的分类器的性能来进行训练。<font color=#D2691E>Boosting是通过关注被已有分类器错分的那些数据来获得新的分类器。</font><br>　　由于Boosting分类的结果是基于所有分类器的加权求和结果的，因此Boosting与Bagging不太一样，Bagging中的分类器权值是一样的，而Boosting中的分类器权重并不相等，每个权重代表对应的分类器在上一轮迭代中的成功度。</p>
+<p>GBDT(特征）:串行，回归树，容易过拟合，减小偏差（boosting），等概率提升错误样本，异常值敏感</p>
+<p>2.1 原理<br>        gboost原理就是所有弱分类器相加等于预测值，下一个弱分类器去拟合误差函数对预测值的梯度。这个梯度在gbdt中就是预测值和真实值差。<br><b>不同于随机森林所有树的预测求均值，gbdt所有的树的预测值加起来是最终的预测值，可以不断接近真实值。</b><br>举个例子：<br>假如有个人30岁，<br>第一棵树，我们首先用20岁去拟合，发现损失有10岁，<br>第二颗，这时我们用6岁去拟合剩下的损失，发现差距还有4岁，<br>第三颗，我们用3岁拟合剩下的差距，差距就只有一岁了。<br>三棵树加起来为29岁，距离30最近。<br>目标函数：</p>
+<p>第m颗树的目标函数就是m颗相加。<br>下一颗树都是用之前的残差去拟合</p>
+<pre><code>传统boosting的原理参见：关于bagging和boosting的知识.note</code></pre><p>　　GBDT与传统的Boosting区别较大，它的每一次计算都是为了减少上一次的残差，而为了消除残差，我们可以在残差减小的梯度方向上建立模型,所以说，在GradientBoost中，每个新的模型的建立是为了使得之前的模型的残差往梯度下降的方法，与传统的Boosting中关注正确错误的样本加权有着很大的区别。<br>　　在GradientBoosting算法中，关键就是利用损失函数的负梯度方向在当前模型的值作为残差的近似值，进而拟合一棵CART回归树。<br>　　GBDT会加所有树的结果，而这种累加是无法通过分类完成的，因此GBDT的树都是CART回归树，而不是分类树（尽管GBDT调整后也可以用于分类但不代表GBDT的树为分类树）。</p>
+<p>GBDT算法包括三个部分：</p>
+<ol>
+<li>损失函数: 从GDBT算法中可以看出，GDBT算法要求损失函数必须是一阶可导的，而且GDBT框架下，任何一阶可导的损失函数都可以使用，不必再为其推导一个新的boosting算法。</li>
+<li>弱分类器: GDBT框架下使用的是决策树作为基函数，每一次迭代过程中，当前函数的构建是在前一次学习结果的基础上使用贪心算法，即：基于当前情况(Gini系数或者纯度)，选择最佳分裂点. 在学习弱分类器的过程中，可以对弱分类器加入约束，如:决策树可以约束深度和叶子的数量。</li>
+<li>Addictive Model: 在GDBT框架下，梯度下降的过程是每一步迭代学习新的树来最小化损失函数(A gradient descent procedure is used to minimize the loss when adding trees.)</li>
+</ol>
+<p>一些特性<br>       1. 每次迭代获得的决策树模型都要乘以一个缩减系数，从而降低每棵树的作用，提升可学习空间。<br>       2. 每次迭代拟合的是一阶梯度。<br>2.2 优缺点<br>　　GBDT的性能在RF的基础上又有一步提升，因此其优点也很明显，1、它能灵活的处理各种类型的数据，包括连续值和离散值；2、在相对较少的调参时间下，预测的准确度较高。（这个是相对SVM说的） 3. GBDT加入了简单的数值优化思想。<br>　　缺点：当然由于它是Boosting，因此基学习器之前存在串行关系，难以并行训练数据。</p>
+<p>3、XGBoost<br>3.1 原理<br>        Xgboost更加有效应用了数值优化。且能够自动地运用CPU的多线程进行并行计算，同时在算法精度上也进行了精度的提高。<br>　　目标函数依然是所有树相加等于预测值。（和gbdt一样）<br> XGBoost 是GBDT的一个变种，最大的区别是xgboost通过对目标函数做二阶泰勒展开<br>损失函数如下，引入了一阶导数，二阶导数，使算法更快收敛。<br>　　<img src="24.png" alt="24"></p>
+<p>XGboost模型是基于GDBT模型的改进提高版</p>
+<p>为什么会效果优呢？原因在于变换：<br>单纯从算法角度，<br>一，加入正则项，防止过拟合。（叶子节点，树的深度等）<br>二，xgboost引入二阶导，下次拟合的不为y-fx，充分利用信息。<br>导数等于0.，可以得到</p>
+<p>下棵树去拟合，相当于除以二阶导，差别大的时候还要放大点需要拟合的值。为误差大的加大权重<br><img src="25.png" alt="25"></p>
+<p>Xgboost迭代与gbdt一样根据误差建立下一个弱分类器，都是gboost的迭代方法，即下一棵树拟合损失函数根据预测值求导的梯度。</p>
+<p>小结：决策树的前世今生不过是从只是应用特征学习，最终也加入了数值优化的部分。由于纯粹的分类算法，xgboost即包含有效的特征学习，又包含有效的数值优化，因此成为了结构化数据大杀器。<br>4、区别<br>4.1 GBDT和XGBoost区别   （不明觉厉）<br>1）传统的GBDT以CART树作为基学习器，XGBoost还支持线性分类器，这个时候XGBoost相当于L1和L2正则化的逻辑斯蒂回归（分类）或者线性回归（回归）；</p>
+<p>2）传统的GBDT在优化的时候只用到一阶导数信息，XGBoost则对损失函数进行了二阶泰勒展开，得到一阶和二阶导数；</p>
+<p>3）XGBoost在代价函数中加入了正则项，用于控制模型的复杂度。正则项里包含了树的叶子节点个数、每个叶子节点上输出的score的L2模的平方和。从Bias-variance tradeoff角度来讲，正则项降低了模型的variance，使学习出来的模型更加简单，防止过拟合，这也是xgboost优于传统GBDT的一个特性。<br><img src="26.png" alt="26"></p>
+<p>4）XGB的权重衰减。相当于学习速率，XGBoost在进行完一次迭代时，会将叶子节点的权值乘上该系数，主要是为了削弱每棵树的影响，让后面有更大的学习空间。（GBDT也有学习速率）；</p>
+<p>5）XGB支持列抽样。XGBoost借鉴了随机森林的做法，支持列抽样，不仅防止过拟合，还能减少计算；</p>
+<p>6）对缺失值的处理。对于特征的值有缺失的样本，XGBoost还可以自动学习出它的分裂方向；对于在训练过程中遇到的缺失值，xgboost将其分别归到左子树和右子树分别计算损失，选取较优的哪一个。如果在训练中没有缺失值，在预测时遇到缺失值，就默认分到右子树。</p>
+<p>7）XGBoost工具支持并行。Boosting不是一种串行的结构吗?怎么并行的？注意XGBoost的并行不是tree粒度的并行，XGBoost也是一次迭代完才能进行下一次迭代的（第t次迭代的代价函数里包含了前面t-1次迭代的预测值）。XGBoost的并行是在特征粒度上的。我们知道，决策树的学习最耗时的一个步骤就是对特征的值进行排序（因为要确定最佳分割点），XGBoost在训练之前，预先对数据进行了排序，然后保存为block结构，后面的迭代 中重复地使用这个结构，大大减小计算量。这个block结构也使得并行成为了可能，在进行节点的分裂时，需要计算每个特征的增益，最终选增益最大的那个特征去做分裂，那么各个特征的增益计算就可以开多线程进行。</p>
+<p>4.2 GBDT和随机森林区别   （一个boosting，一个bagging）<br>1、组成随机森林的树可以是分类树，也可以是回归树；而GBDT只由回归树组成<br>2、组成随机森林的树可以并行生成；而GBDT只能是串行生成<br>3、对于最终的输出结果而言，随机森林采用多数投票等；而GBDT则是将所有结果累加起来，或者加权累加起来<br>4、随机森林对异常值不敏感，GBDT对异常值非常敏感<br>5、随机森林对训练集一视同仁，GBDT是基于权值的弱分类器的集成<br>6、随机森林是通过减少模型方差提高性能，GBDT是通过减少模型偏差提高性能</p>
+<p>关系图：<br><img src="27.png" alt="27"></p>
+<p>—————————————————————————————————————————————————————————————————————————————————————————————友情分割线——————————————————————————————-</p>
+<p>lightGBM与XGBoost区别</p>
+<p>参考文献;</p>
+<ol>
+<li><a href="https://blog.csdn.net/u010089444/article/details/53241218" target="_blank" rel="noopener">https://blog.csdn.net/u010089444/article/details/53241218</a></li>
+<li><a href="https://blog.csdn.net/weixin_40604987/article/details/79296427" target="_blank" rel="noopener">https://blog.csdn.net/weixin_40604987/article/details/79296427</a></li>
+<li><a href="https://cloud.tencent.com/developer/article/1061955" target="_blank" rel="noopener">https://cloud.tencent.com/developer/article/1061955</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/28675445" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/28675445</a><br><a href="https://blog.csdn.net/jackmcgradylee/article/details/77778001" target="_blank" rel="noopener">https://blog.csdn.net/jackmcgradylee/article/details/77778001</a></li>
+<li><a href="https://blog.csdn.net/u012155582/article/details/79866245" target="_blank" rel="noopener">https://blog.csdn.net/u012155582/article/details/79866245</a></li>
+<li><a href="https://marian5211.github.io/2018/03/12/%E3%80%90%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E3%80%91gbdt-xgboost-lightGBM%E6%AF%94%E8%BE%83/" target="_blank" rel="noopener">https://marian5211.github.io/2018/03/12/%E3%80%90%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E3%80%91gbdt-xgboost-lightGBM%E6%AF%94%E8%BE%83/</a></li>
+<li><a href="http://gwansiu.com/2017/10/29/RF-GBDT-XGboost/" target="_blank" rel="noopener">http://gwansiu.com/2017/10/29/RF-GBDT-XGboost/</a></li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/03/09/%E5%86%B3%E7%AD%96%E6%A0%91/" data-id="ck7t8trex0015k6s6378v5pgv" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/03/16/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/01/23/leetcode-208/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">leetcode-208</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/" rel="tag">blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/deep-learning/" rel="tag">deep learning</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%88%B7%E9%A2%98/" rel="tag">刷题</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BF%83%E6%83%85/" rel="tag">心情</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%BD%AF%E4%BB%B6-photoshop/" rel="tag">软件 photoshop</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/blog/" style="font-size: 10px;">blog</a> <a href="/tags/deep-learning/" style="font-size: 16.67px;">deep learning</a> <a href="/tags/%E5%88%B7%E9%A2%98/" style="font-size: 20px;">刷题</a> <a href="/tags/%E5%BF%83%E6%83%85/" style="font-size: 13.33px;">心情</a> <a href="/tags/%E8%BD%AF%E4%BB%B6-photoshop/" style="font-size: 10px;">软件 photoshop</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/03/16/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2019/03/09/%E5%86%B3%E7%AD%96%E6%A0%91/">决策树</a>
+          </li>
+        
+          <li>
+            <a href="/2019/01/23/leetcode-208/">leetcode-208</a>
+          </li>
+        
+          <li>
+            <a href="/2019/01/14/sliding-window/">sliding-window</a>
+          </li>
+        
+          <li>
+            <a href="/2019/01/12/leetcode46-permutations/">leetcode46-permutations</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
