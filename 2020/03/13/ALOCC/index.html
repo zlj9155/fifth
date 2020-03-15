@@ -79,17 +79,20 @@
 
 
 
-<meta name="description" content="#熟读唐诗三百首，不会作诗也能吟。 12345678910111213141516171819202122class Solution &amp;#123;public:    vector&lt;vector&lt;int&gt;&gt; permute(vector&lt;int&gt;&amp; nums) &amp;#123;        vector&lt;vector&lt;int&gt;&gt;">
+<meta name="description" content="标题插入h2h3h4h5h6一级标题二级标题根据标题生成目录[TOC]  hello world!（引用，单行代码）   hello world!hello world!hello world!    hello world!hello world!hello world!   引用代码， 多层嵌套  aaaaaaaaa  bbbbbbbbb  cccccccccc    hello world">
 <meta property="og:type" content="article">
-<meta property="og:title" content="leetcode46-permutations">
-<meta property="og:url" content="http://yoursite.com/2019/01/12/leetcode46-permutations/index.html">
+<meta property="og:title" content="ALOCC">
+<meta property="og:url" content="http://yoursite.com/2020/03/13/ALOCC/index.html">
 <meta property="og:site_name" content="花儿的博客">
-<meta property="og:description" content="#熟读唐诗三百首，不会作诗也能吟。 12345678910111213141516171819202122class Solution &amp;#123;public:    vector&lt;vector&lt;int&gt;&gt; permute(vector&lt;int&gt;&amp; nums) &amp;#123;        vector&lt;vector&lt;int&gt;&gt;">
+<meta property="og:description" content="标题插入h2h3h4h5h6一级标题二级标题根据标题生成目录[TOC]  hello world!（引用，单行代码）   hello world!hello world!hello world!    hello world!hello world!hello world!   引用代码， 多层嵌套  aaaaaaaaa  bbbbbbbbb  cccccccccc    hello world">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2019-01-12T10:53:56.000Z">
-<meta property="article:modified_time" content="2019-01-12T12:04:28.000Z">
+<meta property="og:image" content="http://yoursite.com/2020/03/13/ALOCC/01.png">
+<meta property="og:image" content="http://yoursite.com/2020/03/13/ALOCC/01.png">
+<meta property="article:published_time" content="2020-03-13T08:29:08.881Z">
+<meta property="article:modified_time" content="2020-03-13T10:22:51.039Z">
 <meta property="article:author" content="xyz">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2020/03/13/ALOCC/01.png">
 
 
 
@@ -119,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/01/12/leetcode46-permutations/"/>
+  <link rel="canonical" href="http://yoursite.com/2020/03/13/ALOCC/"/>
 
 
 
 
 
-  <title>leetcode46-permutations | 花儿的博客</title>
+  <title>ALOCC | 花儿的博客</title>
   
 
 
@@ -274,7 +277,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/12/leetcode46-permutations/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/13/ALOCC/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xyz">
@@ -291,7 +294,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">leetcode46-permutations</h1>
+          <h1 class="post-title" itemprop="name headline">ALOCC</h1>
         
 
         <div class="post-meta">
@@ -303,8 +306,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-12T18:53:56+08:00">
-                2019-01-12
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-03-13T16:29:08+08:00">
+                2020-03-13
               </time>
             
 
@@ -322,8 +325,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/01/12/leetcode46-permutations/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/01/12/leetcode46-permutations/" itemprop="commentCount"></span>
+                <a href="/2020/03/13/ALOCC/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2020/03/13/ALOCC/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -370,8 +373,53 @@
       
 
       
-        <p>#熟读唐诗三百首，不会作诗也能吟。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;vector&lt;int&gt;&gt; permute(vector&lt;int&gt;&amp; nums) &#123;</span><br><span class="line">        vector&lt;vector&lt;int&gt;&gt; res;</span><br><span class="line">        if(nums.empty())  return res;</span><br><span class="line">        vector&lt;int&gt; tmp;</span><br><span class="line">        Help(nums,res,0);</span><br><span class="line">        return res;</span><br><span class="line">    &#125;</span><br><span class="line">    void Help(vector&lt;int&gt; &amp;nums,  vector&lt;vector&lt;int&gt;&gt; &amp;res,int begin)&#123;</span><br><span class="line">        if(begin&gt;&#x3D;nums.size())&#123;</span><br><span class="line">            res.push_back(nums);</span><br><span class="line">            return;</span><br><span class="line">        &#125;</span><br><span class="line">        for(int i&#x3D;begin;i&lt;nums.size();i++)&#123; &#x2F;&#x2F;固定了前[0-begin-1]</span><br><span class="line">            swap(nums[begin],nums[i]);</span><br><span class="line">            Help(nums,res,begin+1);</span><br><span class="line">            swap(nums[begin],nums[i]);&#x2F;&#x2F;reset</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+        <h1 id="标题插入"><a href="#标题插入" class="headerlink" title="标题插入"></a>标题插入</h1><h2 id="h2"><a href="#h2" class="headerlink" title="h2"></a>h2</h2><h3 id="h3"><a href="#h3" class="headerlink" title="h3"></a>h3</h3><h4 id="h4"><a href="#h4" class="headerlink" title="h4"></a>h4</h4><h5 id="h5"><a href="#h5" class="headerlink" title="h5"></a>h5</h5><h6 id="h6"><a href="#h6" class="headerlink" title="h6"></a>h6</h6><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><p>根据标题生成目录<br>[TOC]</p>
+<blockquote>
+<p>hello world!（引用，单行代码）</p>
+</blockquote>
+<blockquote>
+<p>hello world!<br>hello world!<br>hello world! </p>
+</blockquote>
+<blockquote>
+<p>hello world!<br>hello world!<br>hello world! </p>
+</blockquote>
+<p>引用代码， 多层嵌套</p>
+<blockquote>
+<p>aaaaaaaaa</p>
+<blockquote>
+<p>bbbbbbbbb</p>
+<blockquote>
+<p>cccccccccc</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p><code>hello world</code></p>
+<p><code>zhanglijian 
+djia;nfg
+jdia;ngggfg
+此乃行内标记，将代码块变成一行</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">用这个标记生成代码块</span><br><span class="line">与上一行间隔空了一行。</span><br><span class="line">    可以用tab进行缩进</span><br></pre></td></tr></table></figure>
+
+
+<p>可以通过不同的配置语言为代码着色</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//javascript</span></span><br><span class="line"><span class="keyword">var</span> num = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">    num+=i;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(num);</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#python</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">10</span>)</span><br><span class="line"><span class="keyword">print</span> i</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//c++</span></span><br><span class="line"><span class="keyword">int</span> i=<span class="number">1</span></span><br><span class="line"><span class="keyword">for</span> (;i&lt;<span class="number">10</span>;i++)&#123;</span><br><span class="line">    j=i+<span class="number">1</span>;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;j&lt;&lt;<span class="built_in">end</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>插入链接：<br>内链式或引用式；</p>
+<p>注：{:target=”_blank”}跳转方式兼容性一般 ，多数第三方平台不支持跳转</p>
+<p>[百度1](<a href="http://www.baidu.com/&quot;" target="_blank" rel="noopener">http://www.baidu.com/&quot;</a> 百度一下”){:target=”_blank”}   </p>
+<p>[百度2][2]{:target=”_blank”}<br>[2]: <a href="http://www.baidu.com/" target="_blank" rel="noopener">http://www.baidu.com/</a>   “百度二下”</p>
+<p>插入图片</p>
+<p><a href="http://www.baidu.com" target="_blank" rel="noopener"><img src="./01.png" alt="" title="百度"></a>{:target=”_blank”}        // 内链式</p>
+<p>[<img src="./01.png" alt="" title="百度">][5]{:target=”_blank”}                       // 引用式<br>[5]: <a href="http://www.baidu.com" target="_blank" rel="noopener">http://www.baidu.com</a> </p>
+<p>插入图片带有链接</p>
+<p>视频插入</p>
+<p>参考链接： </p>
+<p><a href="https://www.cnblogs.com/shawWey/p/8931697.html" target="_blank" rel="noopener">https://www.cnblogs.com/shawWey/p/8931697.html</a></p>
+
       
     </div>
     
@@ -420,7 +468,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link:</strong>
-    <a href="http://yoursite.com/2019/01/12/leetcode46-permutations/" title="leetcode46-permutations">http://yoursite.com/2019/01/12/leetcode46-permutations/</a>
+    <a href="http://yoursite.com/2020/03/13/ALOCC/" title="ALOCC">http://yoursite.com/2020/03/13/ALOCC/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice: </strong>
@@ -442,8 +490,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/01/12/leetcode34-%E5%AE%A1%E8%A7%86%E4%BA%8C%E5%88%86%E6%90%9C%E7%B4%A2/" rel="next" title="leetcode34-审视二分搜索">
-                <i class="fa fa-chevron-left"></i> leetcode34-审视二分搜索
+              <a href="/2020/03/13/%E6%95%99%E7%A8%8B/" rel="next" title="教程">
+                <i class="fa fa-chevron-left"></i> 教程
               </a>
             
           </div>
@@ -452,8 +500,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/01/14/sliding-window/" rel="prev" title="sliding-window">
-                sliding-window <i class="fa fa-chevron-right"></i>
+              <a href="/2020/03/16/hello-world/" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -511,8 +559,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -598,6 +655,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#标题插入"><span class="nav-number">1.</span> <span class="nav-text">标题插入</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#h2"><span class="nav-number">1.1.</span> <span class="nav-text">h2</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#h3"><span class="nav-number">1.1.1.</span> <span class="nav-text">h3</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#h4"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">h4</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#h5"><span class="nav-number">1.1.1.1.1.</span> <span class="nav-text">h5</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#h6"><span class="nav-number">1.1.1.1.1.1.</span> <span class="nav-text">h6</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一级标题"><span class="nav-number">2.</span> <span class="nav-text">一级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#二级标题"><span class="nav-number">2.1.</span> <span class="nav-text">二级标题</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
